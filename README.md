@@ -1,11 +1,5 @@
 # VDF Group Project — Home Automation System
-**Group No. 13** | IIIT Delhi | Submitted to: Dr. Sneh Saurabh
-
-**Team Members:**
-- Anushree Vardish (PHD24112)
-- Anushka Kawathekar (MT25161)
-- Drashi Jain (MT25114)
-- Mukka Rashmitha (MT25170)
+Drashi Jain | IIIT Delhi | Submitted to: Dr. Sneh Saurabh
 
 ---
 
