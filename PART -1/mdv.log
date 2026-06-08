@@ -1,0 +1,21 @@
+02:03:52:0569 [com.cadence.mdv.imc.Main] [main] INFO  - Binding debug tools http on port: 41691
+19:09:49:0151 [com.cadence.mdv.imc.Main] [main] INFO  - Binding debug tools http on port: 36954
+20:17:12:0609 [com.cadence.mdv.imc.Main] [main] INFO  - Binding debug tools http on port: 42529
+20:38:19:0759 [com.cadence.softshare.service.LmApi.LmApi] [shared-license-bridge-op-thread] WARN  - (LMC-07702): License call failed . The license server search path is defined as 5280@14.139.1.126&5280@14.139.1.126. Unable to validate license feature(s)(first attempt). After the third attempt the application will wait indefinitely until the licenses become available.
+
+Run 'lic_error LMC-07702' for more information.
+21:20:12:0523 [com.cadence.softshare.service.LmApi.LmApi] [shared-license-bridge-op-thread] WARN  - (LMC-07702): License call failed . The license server search path is defined as 5280@14.139.1.126&5280@14.139.1.126. Unable to validate license feature(s)(first attempt). After the third attempt the application will wait indefinitely until the licenses become available.
+
+Run 'lic_error LMC-07702' for more information.
+21:44:57:0036 [com.cadence.softshare.service.LmApi.LmApi] [shared-license-bridge-op-thread] WARN  - (LMC-07702): License call failed . The license server search path is defined as 5280@14.139.1.126&5280@14.139.1.126. Unable to validate license feature(s)(first attempt). After the third attempt the application will wait indefinitely until the licenses become available.
+
+Run 'lic_error LMC-07702' for more information.
+22:15:15:0852 [com.cadence.softshare.service.LmApi.LmApi] [shared-license-bridge-op-thread] WARN  - (LMC-07702): License call failed . The license server search path is defined as 5280@14.139.1.126&5280@14.139.1.126. Unable to validate license feature(s)(first attempt). After the third attempt the application will wait indefinitely until the licenses become available.
+
+Run 'lic_error LMC-07702' for more information.
+10:28:01:0135 [com.cadence.mdv.imc.Main] [main] INFO  - Binding debug tools http on port: 37464
+10:28:17:0637 [com.cadence.mdv.imc.Main] [main] INFO  - Binding debug tools http on port: 35139
+10:30:27:0976 [com.cadence.mdv.imc.Main] [main] INFO  - Binding debug tools http on port: 45159
+10:32:52:0414 [com.cadence.mdv.imc.Main] [main] INFO  - Binding debug tools http on port: 44593
+23:18:48:0100 [com.cadence.mdv.imc.Main] [main] INFO  - Binding debug tools http on port: 43001
+12:37:53:0633 [com.cadence.mdv.imc.Main] [main] INFO  - Binding debug tools http on port: 44135

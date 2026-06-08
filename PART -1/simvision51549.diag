@@ -1,0 +1,96 @@
+*** Message Type: info ***
+When: Tue Nov 04 08:16:55 PM IST 2025
+SimVision started.
+Version: TOOL:  simvision(64)   15.20-s084
+User: drashi25114
+Host: localhost
+Platform: Linux/x86_64/2.6.32-754.35.1.el6.x86_64
+Started: Tue Nov 04 08:16:55 PM IST 2025
+Command: /cadence/INCISIVE152/tools.lnx86/simvision/bin/64bit/simvision.exe -connect dc:localhost:33703 -64BIT -nocopyright
+Work Directory: /home/drashi25114/Desktop/cmos65/90nm/verilog
+ 
+*** Message Type: info ***
+When: Tue Nov 04 08:16:56 PM IST 2025
+Create browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Tue Nov 04 08:16:57 PM IST 2025
+Create console window: "Console"
+ 
+*** Message Type: info ***
+When: Tue Nov 04 08:16:57 PM IST 2025
+Connect to Simulator
+      Design: worklib.tb_home_automation:v
+   Languages: verilog
+   Simulator: NC-Sim
+     Version: TOOL:       ncsim(64)       15.20-s084
+        User: drashi25114
+        Host: localhost
+Time Started: Tue Nov 04 08:16:55 PM IST 2025
+  Process ID: 51044
+   Directory: /home/drashi25114/Desktop/cmos65/90nm/verilog
+     Command: ncverilog -access rwc Top.v best_Top_tb.v -coverage all -gui
+
+ 
+*** Message Type: info ***
+When: Tue Nov 04 08:16:57 PM IST 2025
+Create utility window: "Properties"
+ 
+*** Message Type: info ***
+When: Tue Nov 04 08:17:03 PM IST 2025
+Create waveform window: "Waveform 1"
+ 
+*** Message Type: info ***
+When: Tue Nov 04 11:22:52 PM IST 2025
+Delete waveform window: "Waveform 1"
+ 
+*** Message Type: info ***
+When: Tue Nov 04 11:22:53 PM IST 2025
+Delete browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Tue Nov 04 11:22:55 PM IST 2025
+Exit NC-Sim: user
+      Design: worklib.tb_home_automation:v
+   Languages: verilog
+   Simulator: NC-Sim
+     Version: TOOL:       ncsim(64)       15.20-s084
+        User: drashi25114
+        Host: localhost
+Time Started: Tue Nov 04 08:16:55 PM IST 2025
+  Process ID: 51044
+   Directory: /home/drashi25114/Desktop/cmos65/90nm/verilog
+     Command: ncverilog -access rwc Top.v best_Top_tb.v -coverage all -gui
+
+ 
+*** Message Type: error ***
+When: Tue Nov 04 11:22:55 PM IST 2025
+NC-Sim Crashed:
+      Design: worklib.tb_home_automation:v
+   Languages: verilog
+   Simulator: NC-Sim
+     Version: TOOL:       ncsim(64)       15.20-s084
+        User: drashi25114
+        Host: localhost
+Time Started: Tue Nov 04 08:16:55 PM IST 2025
+  Process ID: 51044
+   Directory: /home/drashi25114/Desktop/cmos65/90nm/verilog
+     Command: ncverilog -access rwc Top.v best_Top_tb.v -coverage all -gui
+      Design: worklib.tb_home_automation:v
+   Languages: verilog
+   Simulator: NC-Sim
+     Version: TOOL: ncsim(64)       15.20-s084
+        User: drashi25114
+        Host: localhost
+Time Started: Tue Nov 04 08:16:55 PM IST 2025
+  Process ID: 51044
+   Directory: /home/drashi25114/Desktop/cmos65/90nm/verilog
+     Command: ncverilog -access rwc Top.v best_Top_tb.v -coverage all -gui
+
+Outstanding STRAP Requests:
+        strap::report enable out
+ 
+*** Message Type: info ***
+When: Tue Nov 04 11:23:03 PM IST 2025
+SimVision Exit.
+ 

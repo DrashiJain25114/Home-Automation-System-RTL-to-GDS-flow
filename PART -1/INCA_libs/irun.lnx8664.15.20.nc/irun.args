@@ -1,0 +1,15 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-c
+-q
+-nostdout
+-access
++rwc
+-ncelabargs
+-partialdesign
+-log
+./.hal-irun.log
+/home/drashi25114/Desktop/cmos65/90nm/verilog/Top.v
+/home/drashi25114/Desktop/cmos65/90nm/verilog/Top_tb.v

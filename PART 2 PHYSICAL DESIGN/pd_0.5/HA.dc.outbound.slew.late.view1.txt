@@ -1,0 +1,30 @@
+# Time Unit : 1e-09 seconds (ns)
+# ActualValue: Actual value of slew seen during delay calculation. This is the value that fell out of bound.
+# BoundValue: Bound value of slew. This is the first or last value for which characterization information is present in the library.
+# BoundType: Lower or Upper, corresponding to whether the actual value is respectively smaller or greater than the bound value.
+# Arc: Arc specification from source pin to sink pin (including rise/fall information for both).
+# Instance: Full hierarchical name of the instance.
+ActualValue    BoundValue    OutputValue    BoundType    Arc    Instance
+0.0030   0.0600   0.1144   Lower   A v -> Y v    CTS_ccl_a_buf_00006
+0.0030   0.0600   0.1152   Lower   A v -> Y v    CTS_ccl_a_buf_00004
+0.6861   0.6120   0.4735   Upper   A ^ -> Y ^    FE_OFC7_rst_n
+0.6861   0.6120   0.3698   Upper   A ^ -> Y ^    FE_OFC6_rst_n
+0.6861   0.6120   0.1781   Upper   A ^ -> Y ^    FE_OFC5_rst_n
+0.0143   0.0168   0.0579   Lower   RN v -> Q v    music_on_cmd_r_reg
+0.0055   0.0168   0.0703   Lower   RN v -> Q v    temp_sensor_r_reg[6]
+0.0055   0.0168   0.0889   Lower   RN v -> Q v    temp_setpoint_r_reg[1]
+0.0052   0.0168   0.0587   Lower   RN v -> Q v    volume_cmd_r_reg[3]
+0.0056   0.0168   0.0585   Lower   RN v -> Q v    volume_cmd_r_reg[2]
+0.0087   0.0168   0.0579   Lower   RN v -> Q v    volume_cmd_r_reg[1]
+0.0055   0.0168   0.0529   Lower   RN v -> Q v    temp_setpoint_r_reg[0]
+0.0055   0.0168   0.0548   Lower   RN v -> Q v    temp_sensor_r_reg[7]
+0.0055   0.0168   0.0609   Lower   RN v -> Q v    temp_sensor_r_reg[5]
+0.0055   0.0168   0.0594   Lower   RN v -> Q v    temp_sensor_r_reg[4]
+0.0054   0.0168   0.0649   Lower   RN v -> Q v    temp_sensor_r_reg[3]
+0.0054   0.0168   0.0720   Lower   RN v -> Q v    temp_sensor_r_reg[2]
+0.0054   0.0168   0.0439   Lower   RN v -> Q v    temp_sensor_r_reg[1]
+0.0054   0.0168   0.0423   Lower   RN v -> Q v    temp_sensor_r_reg[0]
+0.6688   0.6120   0.0667   Upper   S0 ^ -> Y v    u_entertainment/g47
+0.6688   0.6120   0.0666   Upper   S0 ^ -> Y v    u_entertainment/g45
+0.6688   0.6120   0.0639   Upper   S0 ^ -> Y v    u_entertainment/g46
+0.6688   0.6120   0.0701   Upper   S0 ^ -> Y v    u_entertainment/g44

@@ -1,0 +1,6 @@
+ncvlog(64): 15.20-s084: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+        init_all(); // Set all inputs to safe default values
+                 |
+ncvlog: *W,TMTPAR (/home/drashi25114/Desktop/cmos65/90nm/verilog/Top_tb.v,159|17): A task enable with no arguments must not include an empty set of parentheses [10.2.2 (IEEE Std 1364-2005)].  The compiler has ignored the parentheses.  Use 'nchelp ncvlog TMTPAR'  for further information.
+ncvlog: Memory Usage - 21.4M program + 27.2M data = 48.6M total
+ncvlog: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.0s, 100.0% cpu)

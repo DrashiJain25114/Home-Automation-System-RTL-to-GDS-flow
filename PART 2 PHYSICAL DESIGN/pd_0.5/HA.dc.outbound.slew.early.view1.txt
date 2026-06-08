@@ -1,0 +1,26 @@
+# Time Unit : 1e-09 seconds (ns)
+# ActualValue: Actual value of slew seen during delay calculation. This is the value that fell out of bound.
+# BoundValue: Bound value of slew. This is the first or last value for which characterization information is present in the library.
+# BoundType: Lower or Upper, corresponding to whether the actual value is respectively smaller or greater than the bound value.
+# Arc: Arc specification from source pin to sink pin (including rise/fall information for both).
+# Instance: Full hierarchical name of the instance.
+ActualValue    BoundValue    OutputValue    BoundType    Arc    Instance
+0.0030   0.0600   0.1123   Lower   A v -> Y v    CTS_ccl_a_buf_00006
+0.0030   0.0600   0.1126   Lower   A v -> Y v    CTS_ccl_a_buf_00004
+0.6734   0.6120   0.4733   Upper   A ^ -> Y ^    FE_OFC7_rst_n
+0.6734   0.6120   0.3695   Upper   A ^ -> Y ^    FE_OFC6_rst_n
+0.6734   0.6120   0.1776   Upper   A ^ -> Y ^    FE_OFC5_rst_n
+0.0141   0.0168   0.0568   Lower   RN v -> Q v    music_on_cmd_r_reg
+0.0054   0.0168   0.0687   Lower   RN v -> Q v    temp_sensor_r_reg[6]
+0.0054   0.0168   0.0866   Lower   RN v -> Q v    temp_setpoint_r_reg[1]
+0.0052   0.0168   0.0576   Lower   RN v -> Q v    volume_cmd_r_reg[3]
+0.0056   0.0168   0.0574   Lower   RN v -> Q v    volume_cmd_r_reg[2]
+0.0086   0.0168   0.0569   Lower   RN v -> Q v    volume_cmd_r_reg[1]
+0.0054   0.0168   0.0501   Lower   RN v -> Q v    temp_setpoint_r_reg[0]
+0.0054   0.0168   0.0539   Lower   RN v -> Q v    temp_sensor_r_reg[7]
+0.0054   0.0168   0.0597   Lower   RN v -> Q v    temp_sensor_r_reg[5]
+0.0054   0.0168   0.0582   Lower   RN v -> Q v    temp_sensor_r_reg[4]
+0.0054   0.0168   0.0635   Lower   RN v -> Q v    temp_sensor_r_reg[3]
+0.0054   0.0168   0.0703   Lower   RN v -> Q v    temp_sensor_r_reg[2]
+0.0054   0.0168   0.0433   Lower   RN v -> Q v    temp_sensor_r_reg[1]
+0.0054   0.0168   0.0417   Lower   RN v -> Q v    temp_sensor_r_reg[0]

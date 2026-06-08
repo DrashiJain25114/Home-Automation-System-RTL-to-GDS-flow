@@ -1,0 +1,227 @@
+[11/18 14:00:17      0s] 
+[11/18 14:00:17      0s] Cadence Tempus(TM) Timing Signoff Solution.
+[11/18 14:00:17      0s] Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+[11/18 14:00:17      0s] 
+[11/18 14:00:17      0s] Version:	v20.10-p003_1, built Wed Apr 29 15:56:37 PDT 2020
+[11/18 14:00:17      0s] Options:	-nowin 
+[11/18 14:00:17      0s] Date:		Tue Nov 18 14:00:17 2025
+[11/18 14:00:17      0s] Host:		edatools-server2.iiitd.edu.in (x86_64 w/Linux 2.6.32-754.35.1.el6.x86_64) (18cores*72cpus*Intel(R) Xeon(R) Gold 6354 CPU @ 3.00GHz 39936KB)
+[11/18 14:00:17      0s] OS:		Red Hat Enterprise Linux Server release 6.10 (Santiago)
+[11/18 14:00:17      0s] 
+[11/18 14:00:17      0s] License:
+[11/18 14:00:20      3s] 		tpsxl	Tempus Timing Signoff Solution XL	20.1	checkout succeeded
+[11/18 14:00:20      3s] 		16 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+[11/18 14:00:28     11s] @(#)CDS: Tempus Timing Signoff Solution v20.10-p003_1 (64bit) 04/29/2020 15:56 (Linux 2.6.32-431.11.2.el6.x86_64)
+[11/18 14:00:28     11s] @(#)CDS: NanoRoute 20.10-p003_1 NR200413-0234/20_10-UB (database version 18.20.505) {superthreading v1.69}
+[11/18 14:00:28     11s] @(#)CDS: AAE 20.10-p005 (64bit) 04/29/2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+[11/18 14:00:28     11s] @(#)CDS: CTE 20.10-p005_1 () Apr 14 2020 09:14:28 ( )
+[11/18 14:00:28     11s] @(#)CDS: SYNTECH 20.10-b004_1 () Mar 12 2020 22:18:21 ( )
+[11/18 14:00:28     11s] @(#)CDS: CPE v20.10-p006
+[11/18 14:00:28     11s] @(#)CDS: OA 22.60-p028 Tue Dec  3 14:08:48 2019
+[11/18 14:00:28     11s] @(#)CDS: SGN 19.10-d001 (24-May-2019) (64 bit executable, Qt5.9.0)
+[11/18 14:00:28     11s] @(#)CDS: RCDB 11.15.0
+[11/18 14:00:28     11s] @(#)CDS: STYLUS 20.10-p002_1 (03/12/2020 10:11 PDT)
+[11/18 14:00:28     11s] Change the soft stacksize limit to 0.2%RAM (1033 mbytes). Set global soft_stack_size_limit to change the value.
+[11/18 14:00:28     11s] **INFO: (TMPDIR-1001): The environment variable TMPDIR is not set.
+Create and set the environment variable TMPDIR to '/tmp/ssv_tmpdir_23368_I17cZ7'.
+environment variable TMPDIR is '/tmp/ssv_tmpdir_23368_I17cZ7'.
+[11/18 14:00:42     11s] <CMD> read_lib /home/drashi25114/Desktop/cmos65/90nm/verilog/STA/sta_after_synthesis_best/lib/slow_wlm.lib
+[11/18 14:00:43     12s] <CMD> read_verilog /home/drashi25114/Desktop/cmos65/90nm/verilog/STA/sta_after_synthesis_best/synthesized_netlist.v
+[11/18 14:00:43     13s] <CMD> set_top_module HA
+[11/18 14:00:43     13s] #% Begin Load MMMC data ... (date=11/18 14:00:43, mem=401.9M)
+[11/18 14:00:43     13s] Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+[11/18 14:00:43     13s] #% End Load MMMC data ... (date=11/18 14:00:43, total cpu=0:00:00.0, real=0:00:00.0, peak res=402.1M, current mem=402.1M)
+[11/18 14:00:43     13s] Loading view definition file from .ssv_emulate_view_definition_23368.tcl
+[11/18 14:00:43     13s] Reading default_emulate_libset_max timing library '/home/drashi25114/Desktop/cmos65/90nm/verilog/STA/sta_after_synthesis_best/lib/slow_wlm.lib' ...
+[11/18 14:00:46     15s] Read 479 cells in library 'slow' 
+[11/18 14:00:46     15s] Ending "PreSetAnalysisView" (total cpu=0:00:02.5, real=0:00:03.0, peak res=455.3M, current mem=407.4M)
+[11/18 14:00:46     15s] *** End library_loading (cpu=0.04min, real=0.05min, mem=16.0M, fe_cpu=0.40min, fe_real=0.48min, fe_mem=572.1M) ***
+[11/18 14:00:46     15s] #% Begin Load netlist data ... (date=11/18 14:00:46, mem=407.4M)
+[11/18 14:00:46     15s] *** Begin netlist parsing (mem=572.1M) ***
+[11/18 14:00:46     15s] Reading verilog netlist '/home/drashi25114/Desktop/cmos65/90nm/verilog/STA/sta_after_synthesis_best/synthesized_netlist.v'
+[11/18 14:00:48     18s] 
+[11/18 14:00:48     18s] *** Memory Usage v#1 (Current mem = 724.180M, initial mem = 273.309M) ***
+[11/18 14:00:48     18s] *** End netlist parsing (cpu=0:00:02.3, real=0:00:02.0, mem=724.2M) ***
+[11/18 14:00:48     18s] #% End Load netlist data ... (date=11/18 14:00:48, total cpu=0:00:02.5, real=0:00:02.0, peak res=512.4M, current mem=504.4M)
+[11/18 14:00:48     18s] Set top cell to HA.
+[11/18 14:00:48     18s] Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+[11/18 14:00:48     18s] late library set: default_emulate_libset_max
+[11/18 14:00:48     18s] early library set: default_emulate_libset_min
+[11/18 14:00:48     18s] Completed consistency checks. Status: Successful
+[11/18 14:00:48     18s] Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+[11/18 14:00:48     18s] late library set: default_emulate_libset_max
+[11/18 14:00:48     18s] early library set: default_emulate_libset_min
+[11/18 14:00:48     18s] Completed consistency checks. Status: Successful
+[11/18 14:00:48     18s] Ending "BindLib:" (total cpu=0:00:00.1, real=0:00:00.0, peak res=541.3M, current mem=541.3M)
+[11/18 14:00:48     18s] Building hierarchical netlist for Cell HA ...
+[11/18 14:00:49     18s] *** Netlist is unique.
+[11/18 14:00:49     18s] ** info: there are 490 modules.
+[11/18 14:00:49     18s] ** info: there are 416 stdCell insts.
+[11/18 14:00:49     18s] 
+[11/18 14:00:49     18s] *** Memory Usage v#1 (Current mem = 930.133M, initial mem = 273.309M) ***
+[11/18 14:00:49     18s] Set Default Net Delay as 1000 ps.
+[11/18 14:00:49     18s] Set Default Net Load as 0.5 pF. 
+[11/18 14:00:49     18s] Set Default Input Pin Transition as 0.1 ps.
+[11/18 14:00:52     21s] Extraction setup Started 
+[11/18 14:00:52     21s] Summary of Active RC-Corners : 
+[11/18 14:00:52     21s]  
+[11/18 14:00:52     21s]  Analysis View: default_emulate_view
+[11/18 14:00:52     21s]     RC-Corner Name        : default_emulate_rc_corner
+[11/18 14:00:52     21s]     RC-Corner Index       : 0
+[11/18 14:00:52     21s]     RC-Corner Temperature : 25 Celsius
+[11/18 14:00:52     21s]     RC-Corner Cap Table   : ''
+[11/18 14:00:52     21s]     RC-Corner PostRoute Res Factor        : 1
+[11/18 14:00:52     21s]     RC-Corner PostRoute Cap Factor        : 1
+[11/18 14:00:52     21s]     RC-Corner PostRoute XCap Factor       : 1
+[11/18 14:00:52     21s] Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+[11/18 14:00:52     21s] late library set: default_emulate_libset_max
+[11/18 14:00:52     21s] early library set: default_emulate_libset_min
+[11/18 14:00:52     21s] Completed consistency checks. Status: Successful
+[11/18 14:00:52     21s] Ending "SetAnalysisView" (total cpu=0:00:00.0, real=0:00:00.0, peak res=794.5M, current mem=628.9M)
+[11/18 14:00:52     21s] Reading timing constraints file '/dev/null' ...
+[11/18 14:00:52     21s] Current (total cpu=0:00:29.5, real=0:00:35.0, peak res=799.8M, current mem=799.8M)
+[11/18 14:00:52     21s] Creating Cell Server ...(0, 1, 1, 1)
+[11/18 14:00:52     21s] Summary for sequential cells identification: 
+[11/18 14:00:52     21s]   Identified SBFF number: 112
+[11/18 14:00:52     21s]   Identified MBFF number: 0
+[11/18 14:00:52     21s]   Identified SB Latch number: 0
+[11/18 14:00:52     21s]   Identified MB Latch number: 0
+[11/18 14:00:52     21s]   Not identified SBFF number: 8
+[11/18 14:00:52     21s]   Not identified MBFF number: 0
+[11/18 14:00:52     21s]   Not identified SB Latch number: 0
+[11/18 14:00:52     21s]   Not identified MB Latch number: 0
+[11/18 14:00:52     21s]   Number of sequential cells which are not FFs: 32
+[11/18 14:00:52     21s] Total number of combinational cells: 316
+[11/18 14:00:52     21s] Total number of sequential cells: 152
+[11/18 14:00:52     21s] Total number of tristate cells: 10
+[11/18 14:00:52     21s] Total number of level shifter cells: 0
+[11/18 14:00:52     21s] Total number of power gating cells: 0
+[11/18 14:00:52     21s] Total number of isolation cells: 0
+[11/18 14:00:52     21s] Total number of power switch cells: 0
+[11/18 14:00:52     21s] Total number of pulse generator cells: 0
+[11/18 14:00:52     21s] Total number of always on buffers: 0
+[11/18 14:00:52     21s] Total number of retention cells: 0
+[11/18 14:00:52     21s] List of usable buffers: BUFX12 BUFX16 BUFX2 BUFX20 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX2 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+[11/18 14:00:52     21s] Total number of usable buffers: 16
+[11/18 14:00:52     21s] List of unusable buffers:
+[11/18 14:00:52     21s] Total number of unusable buffers: 0
+[11/18 14:00:52     21s] List of usable inverters: CLKINVX1 CLKINVX12 CLKINVX16 CLKINVX2 CLKINVX20 CLKINVX3 CLKINVX4 CLKINVX6 CLKINVX8 INVX1 INVX12 INVX16 INVX2 INVX20 INVX3 INVX4 INVX6 INVXL INVX8
+[11/18 14:00:52     21s] Total number of usable inverters: 19
+[11/18 14:00:52     21s] List of unusable inverters:
+[11/18 14:00:52     21s] Total number of unusable inverters: 0
+[11/18 14:00:52     21s] List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X4 DLY4X1
+[11/18 14:00:52     21s] Total number of identified usable delay cells: 8
+[11/18 14:00:52     21s] List of identified unusable delay cells:
+[11/18 14:00:52     21s] Total number of identified unusable delay cells: 0
+[11/18 14:00:52     21s] Creating Cell Server, finished. 
+[11/18 14:00:52     21s] 
+[11/18 14:00:52     21s] Deleting Cell Server ...
+[11/18 14:00:52     21s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=821.6M, current mem=821.6M)
+[11/18 14:00:52     21s] Creating Cell Server ...(0, 0, 0, 0)
+[11/18 14:00:52     21s] Summary for sequential cells identification: 
+[11/18 14:00:52     21s]   Identified SBFF number: 112
+[11/18 14:00:52     21s]   Identified MBFF number: 0
+[11/18 14:00:52     21s]   Identified SB Latch number: 0
+[11/18 14:00:52     21s]   Identified MB Latch number: 0
+[11/18 14:00:52     21s]   Not identified SBFF number: 8
+[11/18 14:00:52     21s]   Not identified MBFF number: 0
+[11/18 14:00:52     21s]   Not identified SB Latch number: 0
+[11/18 14:00:52     21s]   Not identified MB Latch number: 0
+[11/18 14:00:52     21s]   Number of sequential cells which are not FFs: 32
+[11/18 14:00:52     21s]  Visiting view : default_emulate_view
+[11/18 14:00:52     21s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[11/18 14:00:52     21s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[11/18 14:00:52     21s]  Visiting view : default_emulate_view
+[11/18 14:00:52     21s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = 0
+[11/18 14:00:52     21s]    : PowerDomain = none : Weighted F : unweighted  = 30.30 (1.000) with rcCorner = -1
+[11/18 14:00:52     21s]  Setting StdDelay to 30.30
+[11/18 14:00:52     21s] Creating Cell Server, finished. 
+[11/18 14:00:52     21s] 
+[11/18 14:00:52     21s] Extraction setup Started 
+[11/18 14:00:52     21s] Summary of Active RC-Corners : 
+[11/18 14:00:52     21s]  
+[11/18 14:00:52     21s]  Analysis View: default_emulate_view
+[11/18 14:00:52     21s]     RC-Corner Name        : default_emulate_rc_corner
+[11/18 14:00:52     21s]     RC-Corner Index       : 0
+[11/18 14:00:52     21s]     RC-Corner Temperature : 125 Celsius
+[11/18 14:00:52     21s]     RC-Corner Cap Table   : ''
+[11/18 14:00:52     21s]     RC-Corner PostRoute Res Factor        : 1
+[11/18 14:00:52     21s]     RC-Corner PostRoute Cap Factor        : 1
+[11/18 14:00:52     21s]     RC-Corner PostRoute XCap Factor       : 1
+[11/18 14:00:52     21s] Extraction setup Started 
+[11/18 14:00:52     21s] Summary of Active RC-Corners : 
+[11/18 14:00:52     21s]  
+[11/18 14:00:52     21s]  Analysis View: default_emulate_view
+[11/18 14:00:52     21s]     RC-Corner Name        : default_emulate_rc_corner
+[11/18 14:00:52     21s]     RC-Corner Index       : 0
+[11/18 14:00:52     21s]     RC-Corner Temperature : 125 Celsius
+[11/18 14:00:52     21s]     RC-Corner Cap Table   : ''
+[11/18 14:00:52     21s]     RC-Corner PostRoute Res Factor        : 1
+[11/18 14:00:52     21s]     RC-Corner PostRoute Cap Factor        : 1
+[11/18 14:00:52     21s]     RC-Corner PostRoute XCap Factor       : 1
+[11/18 14:00:52     21s] Extraction setup Started 
+[11/18 14:00:52     21s] Summary of Active RC-Corners : 
+[11/18 14:00:52     21s]  
+[11/18 14:00:52     21s]  Analysis View: default_emulate_view
+[11/18 14:00:52     21s]     RC-Corner Name        : default_emulate_rc_corner
+[11/18 14:00:52     21s]     RC-Corner Index       : 0
+[11/18 14:00:52     21s]     RC-Corner Temperature : 125 Celsius
+[11/18 14:00:52     21s]     RC-Corner Cap Table   : ''
+[11/18 14:00:52     21s]     RC-Corner PostRoute Res Factor        : 1
+[11/18 14:00:52     21s]     RC-Corner PostRoute Cap Factor        : 1
+[11/18 14:00:52     21s]     RC-Corner PostRoute XCap Factor       : 1
+[11/18 14:00:52     21s] <CMD> read_sdc /home/drashi25114/Desktop/cmos65/90nm/verilog/STA/sta_after_synthesis_best/best_sta.sdc
+[11/18 14:00:52     21s] Current (total cpu=0:00:29.8, real=0:00:35.0, peak res=822.2M, current mem=782.3M)
+[11/18 14:00:52     21s] **WARN: (TCLNL-330):	set_input_delay on clock root 'clk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File /home/drashi25114/Desktop/cmos65/90nm/verilog/STA/sta_after_synthesis_best/best_sta.sdc, Line 12).
+[11/18 14:00:52     21s] 
+[11/18 14:00:52     21s] INFO (CTE): Reading of timing constraints file /home/drashi25114/Desktop/cmos65/90nm/verilog/STA/sta_after_synthesis_best/best_sta.sdc completed, with 1 WARNING
+[11/18 14:00:52     21s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=799.9M, current mem=799.9M)
+[11/18 14:00:52     21s] Current (total cpu=0:00:29.8, real=0:00:35.0, peak res=822.2M, current mem=799.9M)
+[11/18 14:00:52     21s] <CMD> set_wire_load_model -name "wlm"
+[11/18 14:00:52     21s] <CMD> set_wire_load_mode segmented
+[11/18 14:00:52     21s] <CMD> check_timing > $report_dir/check_timing.rpt
+[11/18 14:00:52     22s] **WARN: (IMPESI-3468):	User needs to specify -equivalent_waveform_model propagation first before specifying -waveform_compression_mode accurate|clock_detailed .
+[11/18 14:00:52     22s] AAE DB initialization (MEM=1101.89 CPU=0:00:00.0 REAL=0:00:00.0) 
+[11/18 14:00:52     22s] #################################################################################
+[11/18 14:00:52     22s] # Design Name: HA
+[11/18 14:00:52     22s] # Design Mode: 65nm
+[11/18 14:00:52     22s] # Analysis Mode: MMMC OCV 
+[11/18 14:00:52     22s] # Parasitics Mode: No SPEF/RCDB
+[11/18 14:00:52     22s] # Signoff Settings: SI Off 
+[11/18 14:00:52     22s] #################################################################################
+[11/18 14:00:55     24s] Topological Sorting (REAL = 0:00:00.0, MEM = 957.9M, InitMEM = 957.9M)
+[11/18 14:00:55     24s] Start delay calculation (fullDC) (1 T). (MEM=957.895)
+[11/18 14:00:55     24s] Start AAE Lib Loading. (MEM=957.895)
+[11/18 14:00:55     24s] End AAE Lib Loading. (MEM=957.895 CPU=0:00:00.0 Real=0:00:00.0)
+[11/18 14:00:55     24s] End AAE Lib Interpolated Model. (MEM=957.895 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[11/18 14:00:55     25s] First Iteration Infinite Tw... 
+[11/18 14:00:55     25s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[11/18 14:00:55     25s] End delay calculation. (MEM=995.188 CPU=0:00:00.1 REAL=0:00:00.0)
+[11/18 14:00:55     25s] End delay calculation (fullDC). (MEM=987.188 CPU=0:00:00.2 REAL=0:00:00.0)
+[11/18 14:00:55     25s] *** CDM Built up (cpu=0:00:03.1  real=0:00:03.0  mem= 987.2M) ***
+[11/18 14:00:56     25s] <CMD> report_timing > $report_dir/timing_report.rpt
+[11/18 14:00:56     25s] <CMD> report_analysis_coverage > $report_dir/analysis_coverage.rpt
+[11/18 14:00:56     25s] <CMD> report_analysis_summary > $report_dir/analysis_summary.rpt
+[11/18 14:00:56     25s] <CMD> report_clocks > $report_dir/clocks.rpt
+[11/18 14:00:56     25s] <CMD> report_case_analysis > $report_dir/case_analysis.rpt
+[11/18 14:00:56     25s] <CMD> report_constraints -all_violators > /home/drashi25114/Desktop/cmos65/90nm/verilog/STA/sta_after_synthesis_best/reports/allviolations.rpt
+[11/18 14:00:56     25s] <CMD> report_wire_load > $report_dir/wireload.rpt
+[11/18 14:00:56     25s] <CMD> report_timing -retime path_slew_propagation -max_paths 30 -nworst 30 -path_type full_clock > $report_dir/pba.rpt
+[11/18 14:00:56     25s] INFO: Path Based Analysis (PBA) performed on total '30' paths
+[11/18 14:00:56     25s] <CMD> report_timing -max_paths 30 -nworst 30 -retime path_slew_propagation > $report_dir/pba_setup.rpt
+[11/18 14:00:56     25s] INFO: Path Based Analysis (PBA) performed on total '30' paths
+[11/18 14:00:56     25s] <CMD> report_timing -early -max_paths 30 -nworst 30 -retime path_slew_propagation > $report_dir/pba_hold.rpt
+[11/18 14:00:56     25s] INFO: Path Based Analysis (PBA) performed on total '30' paths
+[11/18 14:00:56     25s] <CMD> report_timing -late -max_paths 30 -nworst 30 -path_type full_clock -net > $report_dir/gba_setup.rpt
+[11/18 14:00:56     25s] <CMD> report_timing -early -max_paths 30 -nworst 30 -path_type full_clock -net > $report_dir/gba_hold.rpt
+[11/18 14:00:56     25s] <CMD> exit
+[11/18 14:00:56     25s] 
+[11/18 14:00:56     25s] *** Memory Usage v#1 (Current mem = 952.129M, initial mem = 273.309M) ***
+[11/18 14:00:56     25s] 
+[11/18 14:00:56     25s] *** Summary of all messages that are not suppressed in this session:
+[11/18 14:00:56     25s] Severity  ID               Count  Summary                                  
+[11/18 14:00:56     25s] WARNING   IMPESI-3468          1  User needs to specify -equivalent_wavefo...
+[11/18 14:00:56     25s] WARNING   TCLNL-330            1  set_input_delay on clock root '%s' is no...
+[11/18 14:00:56     25s] *** Message Summary: 2 warning(s), 0 error(s)
+[11/18 14:00:56     25s] 
+[11/18 14:00:56     25s] --- Ending "Tempus Timing Signoff Solution" (totcpu=0:00:33.3, real=0:00:39.0, mem=952.1M) ---

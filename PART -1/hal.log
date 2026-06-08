@@ -1,0 +1,36 @@
+hal(64): 15.20-s084: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+hal: Options:   -cdslib /home/drashi25114/Desktop/cmos65/90nm/verilog/cds.lib -logfile hal.log /home/drashi25114/Desktop/cmos65/90nm/verilog/Top.v /home/drashi25114/Desktop/cmos65/90nm/verilog/Top_tb.v.
+hal: Workspace: /home/drashi25114/Desktop/cmos65/90nm/verilog.
+hal: Date: Fri Jun 05 23:15:23 IST 2026.
+
+hal: Running on design source files.....
+
+  ==========================================================================
+Compiling design 
+
+
+        init_all(); // Set all inputs to safe default values
+                 |
+ncvlog: *W,TMTPAR (/home/drashi25114/Desktop/cmos65/90nm/verilog/Top_tb.v,159|17): A task enable with no arguments must not include an empty set of parentheses [10.2.2 (IEEE Std 1364-2005)].  The compiler has ignored the parentheses.  Use 'nchelp ncvlog TMTPAR'  for further information.
+	Top level design units:
+		tb_home_automation
+        $display("WORST COVERAGE TESTBENCH (72%) for home_automation_top");
+                                                                        |
+ncelab: *E,ILLFMT (./Top_tb.v,156|72): Illegal format (%)).
+irun: *E,ELBERR: Error during elaboration (status 1), exiting.
+
+Analysis summary :
+
+ Errors   : (2)
+  ELBERR (1)      ILLFMT (1)     
+
+ Warnings : (1)
+  TMTPAR (1)     
+
+Analysis failed.
+
+ ==========================================================================
+
+To analyze results, run following command :
+    ncbrowse -64bit -cdslib /home/drashi25114/Desktop/cmos65/90nm/verilog/cds.lib -sortby severity -sortby category -sortby tag hal.log
+

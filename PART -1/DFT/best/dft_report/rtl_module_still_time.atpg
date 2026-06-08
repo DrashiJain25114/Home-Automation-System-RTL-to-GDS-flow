@@ -1,0 +1,178 @@
+STIL 1.0 { Design 2005; } 
+Header {
+    Title "CTL for design 'HA'";
+    Date  "Wed Nov 05 12:08:07 IST 2025";
+    Source "Cadence Design Systems Genus 19.13-s073_1 STIL output";
+}
+Signals {
+    "clk" In; "rst_n" In; "temp_sensor[7]" In;  
+    "temp_sensor[6]" In; "temp_sensor[5]" In; "temp_sensor[4]" In; "temp_sensor[3]" In;  
+    "temp_sensor[2]" In; "temp_sensor[1]" In; "temp_sensor[0]" In; "temp_setpoint[7]" In;  
+    "temp_setpoint[6]" In; "temp_setpoint[5]" In; "temp_setpoint[4]" In; "temp_setpoint[3]" In;  
+    "temp_setpoint[2]" In; "temp_setpoint[1]" In; "temp_setpoint[0]" In; "water_level[3]" In;  
+    "water_level[2]" In; "water_level[1]" In; "water_level[0]" In; "light_sensor[7]" In;  
+    "light_sensor[6]" In; "light_sensor[5]" In; "light_sensor[4]" In; "light_sensor[3]" In;  
+    "light_sensor[2]" In; "light_sensor[1]" In; "light_sensor[0]" In; "motion_sensor" In;  
+    "door_sensor" In; "window_sensor" In; "alarm_arm" In; "entry_sensor" In;  
+    "exit_sensor" In; "window_auto_mode" In; "window_manual_open" In; "window_manual_close" In;  
+    "tv_on_cmd" In; "music_on_cmd" In; "volume_cmd[3]" In; "volume_cmd[2]" In;  
+    "volume_cmd[1]" In; "volume_cmd[0]" In; "ac_cmd" In; "fan_cmd" In;  
+    "light_cmd" In; "door_lock_cmd" In; "door_unlock_cmd" In; "pin_input[3]" In;  
+    "pin_input[2]" In; "pin_input[1]" In; "pin_input[0]" In; "humidity_sensor[7]" In;  
+    "humidity_sensor[6]" In; "humidity_sensor[5]" In; "humidity_sensor[4]" In; "humidity_sensor[3]" In;  
+    "humidity_sensor[2]" In; "humidity_sensor[1]" In; "humidity_sensor[0]" In; "scan_en" In;  
+    "test_mode" In; "DFT_sdi_1" In; "DFT_sdi_2" In;  
+ 
+    "heater_on" Out; "cooler_on" Out; "water_pump_on" Out;  
+    "water_valve_close" Out; "led_brightness[7]" Out; "led_brightness[6]" Out; "led_brightness[5]" Out;  
+    "led_brightness[4]" Out; "led_brightness[3]" Out; "led_brightness[2]" Out; "led_brightness[1]" Out;  
+    "led_brightness[0]" Out; "burglar_alarm_out" Out; "visitor_count[7]" Out; "visitor_count[6]" Out;  
+    "visitor_count[5]" Out; "visitor_count[4]" Out; "visitor_count[3]" Out; "visitor_count[2]" Out;  
+    "visitor_count[1]" Out; "visitor_count[0]" Out; "window_state[1]" Out; "window_state[0]" Out;  
+    "tv_on" Out; "music_on" Out; "volume_level[3]" Out; "volume_level[2]" Out;  
+    "volume_level[1]" Out; "volume_level[0]" Out; "ac_on" Out; "fan_on" Out;  
+    "lights_on" Out; "door_locked" Out; "lock_status[1]" Out; "lock_status[0]" Out;  
+    "humidifier_on" Out; "dehumidifier_on" Out; "system_status[7]" Out; "system_status[6]" Out;  
+    "system_status[5]" Out; "system_status[4]" Out; "system_status[3]" Out; "system_status[2]" Out;  
+    "system_status[1]" Out; "system_status[0]" Out; "DFT_sdo_1" Out; "DFT_sdo_2" Out;  
+}
+SignalGroups {
+  // ... no bidirectional signals found
+  "all_inputs" = ' "clk" + "rst_n" + "temp_sensor[7]" +  
+    "temp_sensor[6]" + "temp_sensor[5]" + "temp_sensor[4]" + "temp_sensor[3]" +  
+    "temp_sensor[2]" + "temp_sensor[1]" + "temp_sensor[0]" + "temp_setpoint[7]" +  
+    "temp_setpoint[6]" + "temp_setpoint[5]" + "temp_setpoint[4]" + "temp_setpoint[3]" +  
+    "temp_setpoint[2]" + "temp_setpoint[1]" + "temp_setpoint[0]" + "water_level[3]" +  
+    "water_level[2]" + "water_level[1]" + "water_level[0]" + "light_sensor[7]" +  
+    "light_sensor[6]" + "light_sensor[5]" + "light_sensor[4]" + "light_sensor[3]" +  
+    "light_sensor[2]" + "light_sensor[1]" + "light_sensor[0]" + "motion_sensor" +  
+    "door_sensor" + "window_sensor" + "alarm_arm" + "entry_sensor" +  
+    "exit_sensor" + "window_auto_mode" + "window_manual_open" + "window_manual_close" +  
+    "tv_on_cmd" + "music_on_cmd" + "volume_cmd[3]" + "volume_cmd[2]" +  
+    "volume_cmd[1]" + "volume_cmd[0]" + "ac_cmd" + "fan_cmd" +  
+    "light_cmd" + "door_lock_cmd" + "door_unlock_cmd" + "pin_input[3]" +  
+    "pin_input[2]" + "pin_input[1]" + "pin_input[0]" + "humidity_sensor[7]" +  
+    "humidity_sensor[6]" + "humidity_sensor[5]" + "humidity_sensor[4]" + "humidity_sensor[3]" +  
+    "humidity_sensor[2]" + "humidity_sensor[1]" + "humidity_sensor[0]" + "scan_en" +  
+    "test_mode" + "DFT_sdi_1" + "DFT_sdi_2" '; // #signals=66
+  "all_outputs" = ' "heater_on" + "cooler_on" + "water_pump_on" +  
+    "water_valve_close" + "led_brightness[7]" + "led_brightness[6]" + "led_brightness[5]" +  
+    "led_brightness[4]" + "led_brightness[3]" + "led_brightness[2]" + "led_brightness[1]" +  
+    "led_brightness[0]" + "burglar_alarm_out" + "visitor_count[7]" + "visitor_count[6]" +  
+    "visitor_count[5]" + "visitor_count[4]" + "visitor_count[3]" + "visitor_count[2]" +  
+    "visitor_count[1]" + "visitor_count[0]" + "window_state[1]" + "window_state[0]" +  
+    "tv_on" + "music_on" + "volume_level[3]" + "volume_level[2]" +  
+    "volume_level[1]" + "volume_level[0]" + "ac_on" + "fan_on" +  
+    "lights_on" + "door_locked" + "lock_status[1]" + "lock_status[0]" +  
+    "humidifier_on" + "dehumidifier_on" + "system_status[7]" + "system_status[6]" +  
+    "system_status[5]" + "system_status[4]" + "system_status[3]" + "system_status[2]" +  
+    "system_status[1]" + "system_status[0]" + "DFT_sdo_1" + "DFT_sdo_2" '; // #signals=47
+  "all_ports" =  ' "all_inputs"+ "all_outputs" '; // #signals=113
+  "_pi" = '"all_inputs"'; // #signals=66
+  "_po" = '"all_outputs"'; // #signals=47
+  "_si" = '"DFT_sdi_1" + "DFT_sdi_2"'; // #signals=2
+  "_so" = '"DFT_sdo_1" + "DFT_sdo_2"'; // #signals=2
+}
+ScanStructures {
+    ScanChain "AutoChain_1" {
+      ScanLength 79;
+     ScanIn "DFT_sdi_1" ; 
+     ScanOut "DFT_sdo_1" ; 
+     ScanEnable "scan_en";
+     ScanMasterClock "clk";
+    }
+    ScanChain "AutoChain_2" {
+      ScanLength 79;
+     ScanIn "DFT_sdi_2" ; 
+     ScanOut "DFT_sdo_2" ; 
+     ScanEnable "scan_en";
+     ScanMasterClock "clk";
+    }
+}
+Timing {
+    WaveformTable "_default_WFT_" { 
+      Period '50ns';
+      Waveforms {
+       "all_inputs" { 0 {  '0ns' D; } } 
+       "all_inputs" { 1 {  '0ns' U; } } 
+       "all_inputs" { Z {  '0ns' Z; } } 
+       "all_inputs" { N {  '0ns' N; } } 
+       "all_outputs" { X {  '0ns' X; } } 
+       "all_outputs" { H {  '0ns' X; '20ns' H; } } 
+       "all_outputs" { T {  '0ns' X; '20ns' T; } } 
+       "all_outputs" { L {  '0ns' X; '20ns' L; } } 
+       "clk" { P {  '0ns' D; '25ns' U; '45ns' D; } } 
+       "rst_n" { P {  '0ns' U; '25ns' D; '45ns' U; } } 
+    }
+  }
+}
+//PatternBurst "__burst__" {
+//  PatList {
+//    "__pattern__" {
+//    }
+//  }
+//}
+//PatternExec {
+//    Timing "";
+//    PatternBurst "__burst__";
+//}
+Procedures {
+    "load_unload" {
+        W "_default_WFT_";
+        V {
+          "clk"=0; 
+          "scan_en"=1; 
+          "test_mode"=1; 
+          "rst_n"=1; 
+          }
+        Shift {
+          W "_default_WFT_";
+          V {
+         "_si"=##; "_so"=##;
+            "clk"=P; 
+            "scan_en"=1; 
+            "test_mode"=1; 
+            "rst_n"=1; 
+}
+        }
+    }
+    "capture" {
+        W "_default_WFT_";
+        F { 
+             "test_mode"=1; 
+          }
+        V { "_pi"=\r66 #; "_po"=\r47 #; }
+    }
+    "capture_clk" {
+        W "_default_WFT_";
+        F { 
+            "test_mode"=1; 
+        }
+        "forcePI": V { "_pi"=\r66 #; }
+        "measurePO": V { "_po"=\r47 #; }
+        "pulse": V { "clk"=P; }
+    }
+    "capture_rst_n" {
+        W "_default_WFT_";
+        F { 
+            "test_mode"=1; 
+        }
+        "forcePI": V { "_pi"=\r66 #; }
+        "measurePO": V { "_po"=\r47 #; }
+        "pulse": V { "rst_n"=P; }
+    }
+}
+MacroDefs {
+    "test_setup" {
+        W "_default_WFT_";
+        V { 
+            "clk" =0; 
+           }
+      // If required, add your test_controller specific initilization vectors here
+        V { 
+          "clk" =0; 
+          "test_mode" = 1; 
+          "rst_n" = 1; 
+        }
+    }
+}

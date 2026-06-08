@@ -1,0 +1,20 @@
+file mkdir /home/drashi25114/Desktop/cmos65/90nm/verilog/CEC/min_area/logic_eq_check_min_area
+set_log_file logical_equivalence_checking.log -replace
+read_library /home/drashi25114/Desktop/cmos65/90nm/verilog/CEC/min_area/lib/slow.v -verilog -both
+
+read_design /home/drashi25114/Desktop/cmos65/90nm/verilog/CEC/min_area/HA.v -verilog -golden
+
+read_design /home/drashi25114/Desktop/cmos65/90nm/verilog/CEC/min_area/synthesized_netlist.v -verilog -revised
+
+set_system_mode lec
+add_compared_points -all
+compare
+report_messages -compare -verb
+report_compare_data -noneq
+report_verification
+
+write_compared_points -replace /home/drashi25114/Desktop/cmos65/90nm/verilog/CEC/min_area/lec_compared_points
+write_mapped_points -replace /home/drashi25114/Desktop/cmos65/90nm/verilog/CEC/min_area/lec_mapped_points
+set_verification_information /home/drashi25114/Desktop/cmos65/90nm/verilog/CEC/min_area
+write_verification_information
+

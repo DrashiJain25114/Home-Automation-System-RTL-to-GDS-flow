@@ -1,0 +1,1016 @@
+// Compared points are: Equivalent
+//  (G) + 63   PO   /heater_on
+//  (R) + 63   PO   /heater_on
+add compared points heater_on
+
+// Compared points are: Equivalent
+//  (G) + 64   PO   /cooler_on
+//  (R) + 64   PO   /cooler_on
+add compared points cooler_on
+
+// Compared points are: Equivalent
+//  (G) + 65   PO   /water_pump_on
+//  (R) + 65   PO   /water_pump_on
+add compared points water_pump_on
+
+// Compared points are: Equivalent
+//  (G) + 66   PO   /water_valve_close
+//  (R) + 66   PO   /water_valve_close
+add compared points water_valve_close
+
+// Compared points are: Equivalent
+//  (G) + 67   PO   /led_brightness[7]
+//  (R) + 67   PO   /led_brightness[7]
+add compared points led_brightness[7]
+
+// Compared points are: Equivalent
+//  (G) + 68   PO   /led_brightness[6]
+//  (R) + 68   PO   /led_brightness[6]
+add compared points led_brightness[6]
+
+// Compared points are: Equivalent
+//  (G) + 69   PO   /led_brightness[5]
+//  (R) + 69   PO   /led_brightness[5]
+add compared points led_brightness[5]
+
+// Compared points are: Equivalent
+//  (G) + 70   PO   /led_brightness[4]
+//  (R) + 70   PO   /led_brightness[4]
+add compared points led_brightness[4]
+
+// Compared points are: Equivalent
+//  (G) + 71   PO   /led_brightness[3]
+//  (R) + 71   PO   /led_brightness[3]
+add compared points led_brightness[3]
+
+// Compared points are: Equivalent
+//  (G) + 72   PO   /led_brightness[2]
+//  (R) + 72   PO   /led_brightness[2]
+add compared points led_brightness[2]
+
+// Compared points are: Equivalent
+//  (G) + 73   PO   /led_brightness[1]
+//  (R) + 73   PO   /led_brightness[1]
+add compared points led_brightness[1]
+
+// Compared points are: Equivalent
+//  (G) + 74   PO   /led_brightness[0]
+//  (R) + 74   PO   /led_brightness[0]
+add compared points led_brightness[0]
+
+// Compared points are: Equivalent
+//  (G) + 75   PO   /burglar_alarm_out
+//  (R) + 75   PO   /burglar_alarm_out
+add compared points burglar_alarm_out
+
+// Compared points are: Equivalent
+//  (G) + 76   PO   /visitor_count[7]
+//  (R) + 76   PO   /visitor_count[7]
+add compared points visitor_count[7]
+
+// Compared points are: Equivalent
+//  (G) + 77   PO   /visitor_count[6]
+//  (R) + 77   PO   /visitor_count[6]
+add compared points visitor_count[6]
+
+// Compared points are: Equivalent
+//  (G) + 78   PO   /visitor_count[5]
+//  (R) + 78   PO   /visitor_count[5]
+add compared points visitor_count[5]
+
+// Compared points are: Equivalent
+//  (G) + 79   PO   /visitor_count[4]
+//  (R) + 79   PO   /visitor_count[4]
+add compared points visitor_count[4]
+
+// Compared points are: Equivalent
+//  (G) + 80   PO   /visitor_count[3]
+//  (R) + 80   PO   /visitor_count[3]
+add compared points visitor_count[3]
+
+// Compared points are: Equivalent
+//  (G) + 81   PO   /visitor_count[2]
+//  (R) + 81   PO   /visitor_count[2]
+add compared points visitor_count[2]
+
+// Compared points are: Equivalent
+//  (G) + 82   PO   /visitor_count[1]
+//  (R) + 82   PO   /visitor_count[1]
+add compared points visitor_count[1]
+
+// Compared points are: Equivalent
+//  (G) + 83   PO   /visitor_count[0]
+//  (R) + 83   PO   /visitor_count[0]
+add compared points visitor_count[0]
+
+// Compared points are: Equivalent
+//  (G) + 84   PO   /window_state[1]
+//  (R) + 84   PO   /window_state[1]
+add compared points window_state[1]
+
+// Compared points are: Equivalent
+//  (G) + 85   PO   /window_state[0]
+//  (R) + 85   PO   /window_state[0]
+add compared points window_state[0]
+
+// Compared points are: Equivalent
+//  (G) + 86   PO   /tv_on
+//  (R) + 86   PO   /tv_on
+add compared points tv_on
+
+// Compared points are: Equivalent
+//  (G) + 87   PO   /music_on
+//  (R) + 87   PO   /music_on
+add compared points music_on
+
+// Compared points are: Equivalent
+//  (G) + 88   PO   /volume_level[3]
+//  (R) + 88   PO   /volume_level[3]
+add compared points volume_level[3]
+
+// Compared points are: Equivalent
+//  (G) + 89   PO   /volume_level[2]
+//  (R) + 89   PO   /volume_level[2]
+add compared points volume_level[2]
+
+// Compared points are: Equivalent
+//  (G) + 90   PO   /volume_level[1]
+//  (R) + 90   PO   /volume_level[1]
+add compared points volume_level[1]
+
+// Compared points are: Equivalent
+//  (G) + 91   PO   /volume_level[0]
+//  (R) + 91   PO   /volume_level[0]
+add compared points volume_level[0]
+
+// Compared points are: Equivalent
+//  (G) + 92   PO   /ac_on
+//  (R) + 92   PO   /ac_on
+add compared points ac_on
+
+// Compared points are: Equivalent
+//  (G) + 93   PO   /fan_on
+//  (R) + 93   PO   /fan_on
+add compared points fan_on
+
+// Compared points are: Equivalent
+//  (G) + 94   PO   /lights_on
+//  (R) + 94   PO   /lights_on
+add compared points lights_on
+
+// Compared points are: Equivalent
+//  (G) + 95   PO   /door_locked
+//  (R) + 95   PO   /door_locked
+add compared points door_locked
+
+// Compared points are: Equivalent
+//  (G) + 96   PO   /lock_status[1]
+//  (R) + 96   PO   /lock_status[1]
+add compared points lock_status[1]
+
+// Compared points are: Equivalent
+//  (G) + 97   PO   /lock_status[0]
+//  (R) + 97   PO   /lock_status[0]
+add compared points lock_status[0]
+
+// Compared points are: Equivalent
+//  (G) + 98   PO   /humidifier_on
+//  (R) + 98   PO   /humidifier_on
+add compared points humidifier_on
+
+// Compared points are: Equivalent
+//  (G) + 99   PO   /dehumidifier_on
+//  (R) + 99   PO   /dehumidifier_on
+add compared points dehumidifier_on
+
+// Compared points are: Equivalent
+//  (G) + 100  PO   /system_status[7]
+//  (R) + 100  PO   /system_status[7]
+add compared points system_status[7]
+
+// Compared points are: Equivalent
+//  (G) + 101  PO   /system_status[6]
+//  (R) + 101  PO   /system_status[6]
+add compared points system_status[6]
+
+// Compared points are: Equivalent
+//  (G) + 102  PO   /system_status[5]
+//  (R) + 102  PO   /system_status[5]
+add compared points system_status[5]
+
+// Compared points are: Equivalent
+//  (G) + 103  PO   /system_status[4]
+//  (R) + 103  PO   /system_status[4]
+add compared points system_status[4]
+
+// Compared points are: Equivalent
+//  (G) + 104  PO   /system_status[3]
+//  (R) + 104  PO   /system_status[3]
+add compared points system_status[3]
+
+// Compared points are: Equivalent
+//  (G) + 105  PO   /system_status[2]
+//  (R) + 105  PO   /system_status[2]
+add compared points system_status[2]
+
+// Compared points are: Equivalent
+//  (G) + 106  PO   /system_status[1]
+//  (R) + 106  PO   /system_status[1]
+add compared points system_status[1]
+
+// Compared points are: Equivalent
+//  (G) + 107  PO   /system_status[0]
+//  (R) + 107  PO   /system_status[0]
+add compared points system_status[0]
+
+// Compared points are: Equivalent
+//  (G) + 108  DFF  /dehumidifier_on_r_reg
+//  (R) + 178  DFF  /dehumidifier_on_r_reg/U$1/U$1
+add compared points dehumidifier_on_r_reg
+
+// Compared points are: Equivalent
+//  (G) + 109  DFF  /humidifier_on_r_reg
+//  (R) + 181  DFF  /humidifier_on_r_reg/U$1/U$1
+add compared points humidifier_on_r_reg
+
+// Compared points are: Equivalent
+//  (G) + 110  DFF  /lock_status_r_reg[1]
+//  (R) + 186  DFF  /lock_status_r_reg[1]/U$1/U$1
+add compared points lock_status_r_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 111  DFF  /lock_status_r_reg[0]
+//  (R) + 185  DFF  /lock_status_r_reg[0]/U$1/U$1
+add compared points lock_status_r_reg[0]
+
+// Compared points are: Equivalent
+//  (G) + 112  DFF  /door_locked_r_reg
+//  (R) + 187  DFF  /door_locked_r_reg/U$1/U$1
+add compared points door_locked_r_reg
+
+// Compared points are: Equivalent
+//  (G) + 113  DFF  /lights_on_r_reg
+//  (R) + 172  DFF  /lights_on_r_reg/U$1/U$1
+add compared points lights_on_r_reg
+
+// Compared points are: Equivalent
+//  (G) + 114  DFF  /fan_on_r_reg
+//  (R) + 174  DFF  /fan_on_r_reg/U$1/U$1
+add compared points fan_on_r_reg
+
+// Compared points are: Equivalent
+//  (G) + 115  DFF  /ac_on_r_reg
+//  (R) + 173  DFF  /ac_on_r_reg/U$1/U$1
+add compared points ac_on_r_reg
+
+// Compared points are: Equivalent
+//  (G) + 116  DFF  /volume_level_r_reg[3]
+//  (R) + 238  DFF  /volume_level_r_reg[3]/U$1/U$1
+add compared points volume_level_r_reg[3]
+
+// Compared points are: Equivalent
+//  (G) + 117  DFF  /volume_level_r_reg[2]
+//  (R) + 240  DFF  /volume_level_r_reg[2]/U$1/U$1
+add compared points volume_level_r_reg[2]
+
+// Compared points are: Equivalent
+//  (G) + 118  DFF  /volume_level_r_reg[1]
+//  (R) + 241  DFF  /volume_level_r_reg[1]/U$1/U$1
+add compared points volume_level_r_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 119  DFF  /volume_level_r_reg[0]
+//  (R) + 242  DFF  /volume_level_r_reg[0]/U$1/U$1
+add compared points volume_level_r_reg[0]
+
+// Compared points are: Equivalent
+//  (G) + 120  DFF  /music_on_r_reg
+//  (R) + 171  DFF  /music_on_r_reg/U$1/U$1
+add compared points music_on_r_reg
+
+// Compared points are: Equivalent
+//  (G) + 121  DFF  /tv_on_r_reg
+//  (R) + 170  DFF  /tv_on_r_reg/U$1/U$1
+add compared points tv_on_r_reg
+
+// Compared points are: Equivalent
+//  (G) + 122  DFF  /window_state_r_reg[1]
+//  (R) + 258  DFF  /window_state_r_reg[1]/U$1/U$1
+add compared points window_state_r_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 123  DFF  /window_state_r_reg[0]
+//  (R) + 263  DFF  /window_state_r_reg[0]/U$1/U$1
+add compared points window_state_r_reg[0]
+
+// Compared points are: Equivalent
+//  (G) + 124  DFF  /visitor_count_r_reg[7]
+//  (R) + 264  DFF  /visitor_count_r_reg[7]/U$1/U$1
+add compared points visitor_count_r_reg[7]
+
+// Compared points are: Equivalent
+//  (G) + 125  DFF  /visitor_count_r_reg[6]
+//  (R) + 265  DFF  /visitor_count_r_reg[6]/U$1/U$1
+add compared points visitor_count_r_reg[6]
+
+// Compared points are: Equivalent
+//  (G) + 126  DFF  /visitor_count_r_reg[5]
+//  (R) + 254  DFF  /visitor_count_r_reg[5]/U$1/U$1
+add compared points visitor_count_r_reg[5]
+
+// Compared points are: Equivalent
+//  (G) + 127  DFF  /visitor_count_r_reg[4]
+//  (R) + 262  DFF  /visitor_count_r_reg[4]/U$1/U$1
+add compared points visitor_count_r_reg[4]
+
+// Compared points are: Equivalent
+//  (G) + 128  DFF  /visitor_count_r_reg[3]
+//  (R) + 260  DFF  /visitor_count_r_reg[3]/U$1/U$1
+add compared points visitor_count_r_reg[3]
+
+// Compared points are: Equivalent
+//  (G) + 129  DFF  /visitor_count_r_reg[2]
+//  (R) + 259  DFF  /visitor_count_r_reg[2]/U$1/U$1
+add compared points visitor_count_r_reg[2]
+
+// Compared points are: Equivalent
+//  (G) + 130  DFF  /visitor_count_r_reg[1]
+//  (R) + 253  DFF  /visitor_count_r_reg[1]/U$1/U$1
+add compared points visitor_count_r_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 131  DFF  /visitor_count_r_reg[0]
+//  (R) + 261  DFF  /visitor_count_r_reg[0]/U$1/U$1
+add compared points visitor_count_r_reg[0]
+
+// Compared points are: Equivalent
+//  (G) + 132  DFF  /burglar_alarm_out_r_reg
+//  (R) + 255  DFF  /burglar_alarm_out_r_reg/U$1/U$1
+add compared points burglar_alarm_out_r_reg
+
+// Compared points are: Equivalent
+//  (G) + 133  DFF  /led_brightness_r_reg[7]
+//  (R) + 177  DFF  /led_brightness_r_reg[7]/U$1/U$1
+add compared points led_brightness_r_reg[7]
+
+// Compared points are: Equivalent
+//  (G) + 134  DFF  /led_brightness_r_reg[6]
+//  (R) + 182  DFF  /led_brightness_r_reg[6]/U$1/U$1
+add compared points led_brightness_r_reg[6]
+
+// Compared points are: Equivalent
+//  (G) + 135  DFF  /led_brightness_r_reg[5]
+//  (R) + 184  DFF  /led_brightness_r_reg[5]/U$1/U$1
+add compared points led_brightness_r_reg[5]
+
+// Compared points are: Equivalent
+//  (G) + 136  DFF  /led_brightness_r_reg[4]
+//  (R) + 175  DFF  /led_brightness_r_reg[4]/U$1/U$1
+add compared points led_brightness_r_reg[4]
+
+// Compared points are: Equivalent
+//  (G) + 137  DFF  /led_brightness_r_reg[3]
+//  (R) + 179  DFF  /led_brightness_r_reg[3]/U$1/U$1
+add compared points led_brightness_r_reg[3]
+
+// Compared points are: Equivalent
+//  (G) + 138  DFF  /led_brightness_r_reg[2]
+//  (R) + 176  DFF  /led_brightness_r_reg[2]/U$1/U$1
+add compared points led_brightness_r_reg[2]
+
+// Compared points are: Equivalent
+//  (G) + 139  DFF  /led_brightness_r_reg[1]
+//  (R) + 183  DFF  /led_brightness_r_reg[1]/U$1/U$1
+add compared points led_brightness_r_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 140  DFF  /led_brightness_r_reg[0]
+//  (R) + 180  DFF  /led_brightness_r_reg[0]/U$1/U$1
+add compared points led_brightness_r_reg[0]
+
+// Compared points are: Equivalent
+//  (G) + 141  DFF  /water_valve_close_r_reg
+//  (R) + 169  DFF  /water_valve_close_r_reg/U$1/U$1
+add compared points water_valve_close_r_reg
+
+// Compared points are: Equivalent
+//  (G) + 142  DFF  /water_pump_on_r_reg
+//  (R) + 247  DFF  /water_pump_on_r_reg/U$1/U$1
+add compared points water_pump_on_r_reg
+
+// Compared points are: Equivalent
+//  (G) + 143  DFF  /cooler_on_r_reg
+//  (R) + 257  DFF  /cooler_on_r_reg/U$1/U$1
+add compared points cooler_on_r_reg
+
+// Compared points are: Equivalent
+//  (G) + 144  DFF  /heater_on_r_reg
+//  (R) + 256  DFF  /heater_on_r_reg/U$1/U$1
+add compared points heater_on_r_reg
+
+// Compared points are: Equivalent
+//  (G) + 145  DFF  /humidity_sensor_r_reg[7]
+//  (R) + 224  DFF  /humidity_sensor_r_reg[7]/U$1/U$1
+add compared points humidity_sensor_r_reg[7]
+
+// Compared points are: Equivalent
+//  (G) + 146  DFF  /humidity_sensor_r_reg[6]
+//  (R) + 211  DFF  /humidity_sensor_r_reg[6]/U$1/U$1
+add compared points humidity_sensor_r_reg[6]
+
+// Compared points are: Equivalent
+//  (G) + 147  DFF  /humidity_sensor_r_reg[5]
+//  (R) + 223  DFF  /humidity_sensor_r_reg[5]/U$1/U$1
+add compared points humidity_sensor_r_reg[5]
+
+// Compared points are: Equivalent
+//  (G) + 148  DFF  /humidity_sensor_r_reg[4]
+//  (R) + 231  DFF  /humidity_sensor_r_reg[4]/U$1/U$1
+add compared points humidity_sensor_r_reg[4]
+
+// Compared points are: Equivalent
+//  (G) + 149  DFF  /humidity_sensor_r_reg[3]
+//  (R) + 216  DFF  /humidity_sensor_r_reg[3]/U$1/U$1
+add compared points humidity_sensor_r_reg[3]
+
+// Compared points are: Equivalent
+//  (G) + 150  DFF  /humidity_sensor_r_reg[2]
+//  (R) + 213  DFF  /humidity_sensor_r_reg[2]/U$1/U$1
+add compared points humidity_sensor_r_reg[2]
+
+// Compared points are: Equivalent
+//  (G) + 151  DFF  /humidity_sensor_r_reg[1]
+//  (R) + 214  DFF  /humidity_sensor_r_reg[1]/U$1/U$1
+add compared points humidity_sensor_r_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 152  DFF  /humidity_sensor_r_reg[0]
+//  (R) + 239  DFF  /humidity_sensor_r_reg[0]/U$1/U$1
+add compared points humidity_sensor_r_reg[0]
+
+// Compared points are: Equivalent
+//  (G) + 153  DFF  /pin_input_r_reg[3]
+//  (R) + 205  DFF  /pin_input_r_reg[3]/U$1/U$1
+add compared points pin_input_r_reg[3]
+
+// Compared points are: Equivalent
+//  (G) + 154  DFF  /pin_input_r_reg[2]
+//  (R) + 189  DFF  /pin_input_r_reg[2]/U$1/U$1
+add compared points pin_input_r_reg[2]
+
+// Compared points are: Equivalent
+//  (G) + 155  DFF  /pin_input_r_reg[1]
+//  (R) + 203  DFF  /pin_input_r_reg[1]/U$1/U$1
+add compared points pin_input_r_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 156  DFF  /pin_input_r_reg[0]
+//  (R) + 204  DFF  /pin_input_r_reg[0]/U$1/U$1
+add compared points pin_input_r_reg[0]
+
+// Compared points are: Equivalent
+//  (G) + 157  DFF  /door_unlock_cmd_r_reg
+//  (R) + 208  DFF  /door_unlock_cmd_r_reg/U$1/U$1
+add compared points door_unlock_cmd_r_reg
+
+// Compared points are: Equivalent
+//  (G) + 158  DFF  /door_lock_cmd_r_reg
+//  (R) + 210  DFF  /door_lock_cmd_r_reg/U$1/U$1
+add compared points door_lock_cmd_r_reg
+
+// Compared points are: Equivalent
+//  (G) + 159  DFF  /light_cmd_r_reg
+//  (R) + 212  DFF  /light_cmd_r_reg/U$1/U$1
+add compared points light_cmd_r_reg
+
+// Compared points are: Equivalent
+//  (G) + 160  DFF  /fan_cmd_r_reg
+//  (R) + 215  DFF  /fan_cmd_r_reg/U$1/U$1
+add compared points fan_cmd_r_reg
+
+// Compared points are: Equivalent
+//  (G) + 161  DFF  /ac_cmd_r_reg
+//  (R) + 222  DFF  /ac_cmd_r_reg/U$1/U$1
+add compared points ac_cmd_r_reg
+
+// Compared points are: Equivalent
+//  (G) + 162  DFF  /volume_cmd_r_reg[3]
+//  (R) + 209  DFF  /volume_cmd_r_reg[3]/U$1/U$1
+add compared points volume_cmd_r_reg[3]
+
+// Compared points are: Equivalent
+//  (G) + 163  DFF  /volume_cmd_r_reg[2]
+//  (R) + 236  DFF  /volume_cmd_r_reg[2]/U$1/U$1
+add compared points volume_cmd_r_reg[2]
+
+// Compared points are: Equivalent
+//  (G) + 164  DFF  /volume_cmd_r_reg[1]
+//  (R) + 207  DFF  /volume_cmd_r_reg[1]/U$1/U$1
+add compared points volume_cmd_r_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 165  DFF  /volume_cmd_r_reg[0]
+//  (R) + 206  DFF  /volume_cmd_r_reg[0]/U$1/U$1
+add compared points volume_cmd_r_reg[0]
+
+// Compared points are: Equivalent
+//  (G) + 166  DFF  /music_on_cmd_r_reg
+//  (R) + 226  DFF  /music_on_cmd_r_reg/U$1/U$1
+add compared points music_on_cmd_r_reg
+
+// Compared points are: Equivalent
+//  (G) + 167  DFF  /tv_on_cmd_r_reg
+//  (R) + 227  DFF  /tv_on_cmd_r_reg/U$1/U$1
+add compared points tv_on_cmd_r_reg
+
+// Compared points are: Equivalent
+//  (G) + 168  DFF  /window_manual_close_r_reg
+//  (R) + 202  DFF  /window_manual_close_r_reg/U$1/U$1
+add compared points window_manual_close_r_reg
+
+// Compared points are: Equivalent
+//  (G) + 169  DFF  /window_manual_open_r_reg
+//  (R) + 243  DFF  /window_manual_open_r_reg/U$1/U$1
+add compared points window_manual_open_r_reg
+
+// Compared points are: Equivalent
+//  (G) + 170  DFF  /window_auto_mode_r_reg
+//  (R) + 198  DFF  /window_auto_mode_r_reg/U$1/U$1
+add compared points window_auto_mode_r_reg
+
+// Compared points are: Equivalent
+//  (G) + 171  DFF  /exit_sensor_r_reg
+//  (R) + 201  DFF  /exit_sensor_r_reg/U$1/U$1
+add compared points exit_sensor_r_reg
+
+// Compared points are: Equivalent
+//  (G) + 172  DFF  /entry_sensor_r_reg
+//  (R) + 200  DFF  /entry_sensor_r_reg/U$1/U$1
+add compared points entry_sensor_r_reg
+
+// Compared points are: Equivalent
+//  (G) + 173  DFF  /alarm_arm_r_reg
+//  (R) + 199  DFF  /alarm_arm_r_reg/U$1/U$1
+add compared points alarm_arm_r_reg
+
+// Compared points are: Equivalent
+//  (G) + 174  DFF  /window_sensor_r_reg
+//  (R) + 197  DFF  /window_sensor_r_reg/U$1/U$1
+add compared points window_sensor_r_reg
+
+// Compared points are: Equivalent
+//  (G) + 175  DFF  /door_sensor_r_reg
+//  (R) + 232  DFF  /door_sensor_r_reg/U$1/U$1
+add compared points door_sensor_r_reg
+
+// Compared points are: Equivalent
+//  (G) + 176  DFF  /motion_sensor_r_reg
+//  (R) + 196  DFF  /motion_sensor_r_reg/U$1/U$1
+add compared points motion_sensor_r_reg
+
+// Compared points are: Equivalent
+//  (G) + 177  DFF  /light_sensor_r_reg[7]
+//  (R) + 249  DFF  /light_sensor_r_reg[7]/U$1/U$1
+add compared points light_sensor_r_reg[7]
+
+// Compared points are: Equivalent
+//  (G) + 178  DFF  /light_sensor_r_reg[6]
+//  (R) + 219  DFF  /light_sensor_r_reg[6]/U$1/U$1
+add compared points light_sensor_r_reg[6]
+
+// Compared points are: Equivalent
+//  (G) + 179  DFF  /light_sensor_r_reg[5]
+//  (R) + 248  DFF  /light_sensor_r_reg[5]/U$1/U$1
+add compared points light_sensor_r_reg[5]
+
+// Compared points are: Equivalent
+//  (G) + 180  DFF  /light_sensor_r_reg[4]
+//  (R) + 218  DFF  /light_sensor_r_reg[4]/U$1/U$1
+add compared points light_sensor_r_reg[4]
+
+// Compared points are: Equivalent
+//  (G) + 181  DFF  /light_sensor_r_reg[3]
+//  (R) + 246  DFF  /light_sensor_r_reg[3]/U$1/U$1
+add compared points light_sensor_r_reg[3]
+
+// Compared points are: Equivalent
+//  (G) + 182  DFF  /light_sensor_r_reg[2]
+//  (R) + 217  DFF  /light_sensor_r_reg[2]/U$1/U$1
+add compared points light_sensor_r_reg[2]
+
+// Compared points are: Equivalent
+//  (G) + 183  DFF  /light_sensor_r_reg[1]
+//  (R) + 220  DFF  /light_sensor_r_reg[1]/U$1/U$1
+add compared points light_sensor_r_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 184  DFF  /light_sensor_r_reg[0]
+//  (R) + 221  DFF  /light_sensor_r_reg[0]/U$1/U$1
+add compared points light_sensor_r_reg[0]
+
+// Compared points are: Equivalent
+//  (G) + 185  DFF  /water_level_r_reg[3]
+//  (R) + 233  DFF  /water_level_r_reg[3]/U$1/U$1
+add compared points water_level_r_reg[3]
+
+// Compared points are: Equivalent
+//  (G) + 186  DFF  /water_level_r_reg[2]
+//  (R) + 229  DFF  /water_level_r_reg[2]/U$1/U$1
+add compared points water_level_r_reg[2]
+
+// Compared points are: Equivalent
+//  (G) + 187  DFF  /water_level_r_reg[1]
+//  (R) + 230  DFF  /water_level_r_reg[1]/U$1/U$1
+add compared points water_level_r_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 188  DFF  /water_level_r_reg[0]
+//  (R) + 228  DFF  /water_level_r_reg[0]/U$1/U$1
+add compared points water_level_r_reg[0]
+
+// Compared points are: Equivalent
+//  (G) + 189  DFF  /temp_setpoint_r_reg[7]
+//  (R) + 190  DFF  /temp_setpoint_r_reg[7]/U$1/U$1
+add compared points temp_setpoint_r_reg[7]
+
+// Compared points are: Equivalent
+//  (G) + 190  DFF  /temp_setpoint_r_reg[6]
+//  (R) + 195  DFF  /temp_setpoint_r_reg[6]/U$1/U$1
+add compared points temp_setpoint_r_reg[6]
+
+// Compared points are: Equivalent
+//  (G) + 191  DFF  /temp_setpoint_r_reg[5]
+//  (R) + 194  DFF  /temp_setpoint_r_reg[5]/U$1/U$1
+add compared points temp_setpoint_r_reg[5]
+
+// Compared points are: Equivalent
+//  (G) + 192  DFF  /temp_setpoint_r_reg[4]
+//  (R) + 193  DFF  /temp_setpoint_r_reg[4]/U$1/U$1
+add compared points temp_setpoint_r_reg[4]
+
+// Compared points are: Equivalent
+//  (G) + 193  DFF  /temp_setpoint_r_reg[3]
+//  (R) + 251  DFF  /temp_setpoint_r_reg[3]/U$1/U$1
+add compared points temp_setpoint_r_reg[3]
+
+// Compared points are: Equivalent
+//  (G) + 194  DFF  /temp_setpoint_r_reg[2]
+//  (R) + 252  DFF  /temp_setpoint_r_reg[2]/U$1/U$1
+add compared points temp_setpoint_r_reg[2]
+
+// Compared points are: Equivalent
+//  (G) + 195  DFF  /temp_setpoint_r_reg[1]
+//  (R) + 250  DFF  /temp_setpoint_r_reg[1]/U$1/U$1
+add compared points temp_setpoint_r_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 196  DFF  /temp_setpoint_r_reg[0]
+//  (R) + 191  DFF  /temp_setpoint_r_reg[0]/U$1/U$1
+add compared points temp_setpoint_r_reg[0]
+
+// Compared points are: Equivalent
+//  (G) + 197  DFF  /temp_sensor_r_reg[7]
+//  (R) + 188  DFF  /temp_sensor_r_reg[7]/U$1/U$1
+add compared points temp_sensor_r_reg[7]
+
+// Compared points are: Equivalent
+//  (G) + 198  DFF  /temp_sensor_r_reg[6]
+//  (R) + 225  DFF  /temp_sensor_r_reg[6]/U$1/U$1
+add compared points temp_sensor_r_reg[6]
+
+// Compared points are: Equivalent
+//  (G) + 199  DFF  /temp_sensor_r_reg[5]
+//  (R) + 234  DFF  /temp_sensor_r_reg[5]/U$1/U$1
+add compared points temp_sensor_r_reg[5]
+
+// Compared points are: Equivalent
+//  (G) + 200  DFF  /temp_sensor_r_reg[4]
+//  (R) + 235  DFF  /temp_sensor_r_reg[4]/U$1/U$1
+add compared points temp_sensor_r_reg[4]
+
+// Compared points are: Equivalent
+//  (G) + 201  DFF  /temp_sensor_r_reg[3]
+//  (R) + 192  DFF  /temp_sensor_r_reg[3]/U$1/U$1
+add compared points temp_sensor_r_reg[3]
+
+// Compared points are: Equivalent
+//  (G) + 202  DFF  /temp_sensor_r_reg[2]
+//  (R) + 237  DFF  /temp_sensor_r_reg[2]/U$1/U$1
+add compared points temp_sensor_r_reg[2]
+
+// Compared points are: Equivalent
+//  (G) + 203  DFF  /temp_sensor_r_reg[1]
+//  (R) + 245  DFF  /temp_sensor_r_reg[1]/U$1/U$1
+add compared points temp_sensor_r_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 204  DFF  /temp_sensor_r_reg[0]
+//  (R) + 244  DFF  /temp_sensor_r_reg[0]/U$1/U$1
+add compared points temp_sensor_r_reg[0]
+
+// Compared points are: Equivalent
+//  (G) + 205  DFF  /u_temp_ctrl/cooler_on_reg
+//  (R) + 153  DFF  /u_temp_ctrl/cooler_on_reg/U$1/U$1
+add compared points u_temp_ctrl/cooler_on_reg
+
+// Compared points are: Equivalent
+//  (G) + 206  DFF  /u_temp_ctrl/heater_on_reg
+//  (R) + 154  DFF  /u_temp_ctrl/heater_on_reg/U$1/U$1
+add compared points u_temp_ctrl/heater_on_reg
+
+// Compared points are: Equivalent
+//  (G) + 207  DFF  /u_water_ctrl/valve_close_reg
+//  (R) + 165  DFF  /u_water_ctrl/valve_close_reg/U$1/U$1
+add compared points u_water_ctrl/valve_close_reg
+
+// Compared points are: Equivalent
+//  (G) + 208  DFF  /u_water_ctrl/pump_on_reg
+//  (R) + 166  DFF  /u_water_ctrl/pump_on_reg/U$1/U$1
+add compared points u_water_ctrl/pump_on_reg
+
+// Compared points are: Equivalent
+//  (G) + 209  DFF  /u_lum_ctrl/led_brightness_reg[7]
+//  (R) + 147  DFF  /u_lum_ctrl/led_brightness_reg[7]/U$1/U$1
+add compared points u_lum_ctrl/led_brightness_reg[7]
+
+// Compared points are: Equivalent
+//  (G) + 210  DFF  /u_lum_ctrl/led_brightness_reg[6]
+//  (R) + 146  DFF  /u_lum_ctrl/led_brightness_reg[6]/U$1/U$1
+add compared points u_lum_ctrl/led_brightness_reg[6]
+
+// Compared points are: Equivalent
+//  (G) + 211  DFF  /u_lum_ctrl/led_brightness_reg[5]
+//  (R) + 150  DFF  /u_lum_ctrl/led_brightness_reg[5]/U$1/U$1
+add compared points u_lum_ctrl/led_brightness_reg[5]
+
+// Compared points are: Equivalent
+//  (G) + 212  DFF  /u_lum_ctrl/led_brightness_reg[4]
+//  (R) + 145  DFF  /u_lum_ctrl/led_brightness_reg[4]/U$1/U$1
+add compared points u_lum_ctrl/led_brightness_reg[4]
+
+// Compared points are: Equivalent
+//  (G) + 213  DFF  /u_lum_ctrl/led_brightness_reg[3]
+//  (R) + 151  DFF  /u_lum_ctrl/led_brightness_reg[3]/U$1/U$1
+add compared points u_lum_ctrl/led_brightness_reg[3]
+
+// Compared points are: Equivalent
+//  (G) + 214  DFF  /u_lum_ctrl/led_brightness_reg[2]
+//  (R) + 149  DFF  /u_lum_ctrl/led_brightness_reg[2]/U$1/U$1
+add compared points u_lum_ctrl/led_brightness_reg[2]
+
+// Compared points are: Equivalent
+//  (G) + 215  DFF  /u_lum_ctrl/led_brightness_reg[1]
+//  (R) + 152  DFF  /u_lum_ctrl/led_brightness_reg[1]/U$1/U$1
+add compared points u_lum_ctrl/led_brightness_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 216  DFF  /u_lum_ctrl/led_brightness_reg[0]
+//  (R) + 148  DFF  /u_lum_ctrl/led_brightness_reg[0]/U$1/U$1
+add compared points u_lum_ctrl/led_brightness_reg[0]
+
+// Compared points are: Equivalent
+//  (G) + 217  DFF  /u_burglar/delay_counter_reg[8]
+//  (R) + 115  DFF  /u_burglar/delay_counter_reg[8]/U$1/U$1
+add compared points u_burglar/delay_counter_reg[8]
+
+// Compared points are: Equivalent
+//  (G) + 218  DFF  /u_burglar/delay_counter_reg[7]
+//  (R) + 113  DFF  /u_burglar/delay_counter_reg[7]/U$1/U$1
+add compared points u_burglar/delay_counter_reg[7]
+
+// Compared points are: Equivalent
+//  (G) + 219  DFF  /u_burglar/delay_counter_reg[6]
+//  (R) + 111  DFF  /u_burglar/delay_counter_reg[6]/U$1/U$1
+add compared points u_burglar/delay_counter_reg[6]
+
+// Compared points are: Equivalent
+//  (G) + 220  DFF  /u_burglar/delay_counter_reg[5]
+//  (R) + 112  DFF  /u_burglar/delay_counter_reg[5]/U$1/U$1
+add compared points u_burglar/delay_counter_reg[5]
+
+// Compared points are: Equivalent
+//  (G) + 221  DFF  /u_burglar/delay_counter_reg[4]
+//  (R) + 114  DFF  /u_burglar/delay_counter_reg[4]/U$1/U$1
+add compared points u_burglar/delay_counter_reg[4]
+
+// Compared points are: Equivalent
+//  (G) + 222  DFF  /u_burglar/delay_counter_reg[3]
+//  (R) + 120  DFF  /u_burglar/delay_counter_reg[3]/U$1/U$1
+add compared points u_burglar/delay_counter_reg[3]
+
+// Compared points are: Equivalent
+//  (G) + 223  DFF  /u_burglar/delay_counter_reg[2]
+//  (R) + 119  DFF  /u_burglar/delay_counter_reg[2]/U$1/U$1
+add compared points u_burglar/delay_counter_reg[2]
+
+// Compared points are: Equivalent
+//  (G) + 224  DFF  /u_burglar/delay_counter_reg[1]
+//  (R) + 117  DFF  /u_burglar/delay_counter_reg[1]/U$1/U$1
+add compared points u_burglar/delay_counter_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 225  DFF  /u_burglar/delay_counter_reg[0]
+//  (R) + 118  DFF  /u_burglar/delay_counter_reg[0]/U$1/U$1
+add compared points u_burglar/delay_counter_reg[0]
+
+// Compared points are: Equivalent
+//  (G) + 226  DFF  /u_burglar/alarm_out_reg
+//  (R) + 116  DFF  /u_burglar/alarm_out_reg/U$1/U$1
+add compared points u_burglar/alarm_out_reg
+
+// Compared points are: Equivalent
+//  (G) + 227  DFF  /u_visitor/exit_prev_reg
+//  (R) + 160  DFF  /u_visitor/exit_prev_reg/U$1/U$1
+add compared points u_visitor/exit_prev_reg
+
+// Compared points are: Equivalent
+//  (G) + 228  DFF  /u_visitor/entry_prev_reg
+//  (R) + 161  DFF  /u_visitor/entry_prev_reg/U$1/U$1
+add compared points u_visitor/entry_prev_reg
+
+// Compared points are: Equivalent
+//  (G) + 229  DFF  /u_visitor/count_reg[7]
+//  (R) + 155  DFF  /u_visitor/count_reg[7]/U$1/U$1
+add compared points u_visitor/count_reg[7]
+
+// Compared points are: Equivalent
+//  (G) + 230  DFF  /u_visitor/count_reg[6]
+//  (R) + 162  DFF  /u_visitor/count_reg[6]/U$1/U$1
+add compared points u_visitor/count_reg[6]
+
+// Compared points are: Equivalent
+//  (G) + 231  DFF  /u_visitor/count_reg[5]
+//  (R) + 156  DFF  /u_visitor/count_reg[5]/U$1/U$1
+add compared points u_visitor/count_reg[5]
+
+// Compared points are: Equivalent
+//  (G) + 232  DFF  /u_visitor/count_reg[4]
+//  (R) + 164  DFF  /u_visitor/count_reg[4]/U$1/U$1
+add compared points u_visitor/count_reg[4]
+
+// Compared points are: Equivalent
+//  (G) + 233  DFF  /u_visitor/count_reg[3]
+//  (R) + 163  DFF  /u_visitor/count_reg[3]/U$1/U$1
+add compared points u_visitor/count_reg[3]
+
+// Compared points are: Equivalent
+//  (G) + 234  DFF  /u_visitor/count_reg[2]
+//  (R) + 157  DFF  /u_visitor/count_reg[2]/U$1/U$1
+add compared points u_visitor/count_reg[2]
+
+// Compared points are: Equivalent
+//  (G) + 235  DFF  /u_visitor/count_reg[1]
+//  (R) + 158  DFF  /u_visitor/count_reg[1]/U$1/U$1
+add compared points u_visitor/count_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 236  DFF  /u_visitor/count_reg[0]
+//  (R) + 159  DFF  /u_visitor/count_reg[0]/U$1/U$1
+add compared points u_visitor/count_reg[0]
+
+// Compared points are: Equivalent
+//  (G) + 237  DFF  /u_window/window_state_reg[1]
+//  (R) + 168  DFF  /u_window/window_state_reg[1]/U$1/U$1
+add compared points u_window/window_state_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 238  DFF  /u_window/window_state_reg[0]
+//  (R) + 167  DFF  /u_window/window_state_reg[0]/U$1/U$1
+add compared points u_window/window_state_reg[0]
+
+// Compared points are: Equivalent
+//  (G) + 239  DFF  /u_entertainment/volume_level_reg[3]
+//  (R) + 142  DFF  /u_entertainment/volume_level_reg[3]/U$1/U$1
+add compared points u_entertainment/volume_level_reg[3]
+
+// Compared points are: Equivalent
+//  (G) + 240  DFF  /u_entertainment/volume_level_reg[2]
+//  (R) + 140  DFF  /u_entertainment/volume_level_reg[2]/U$1/U$1
+add compared points u_entertainment/volume_level_reg[2]
+
+// Compared points are: Equivalent
+//  (G) + 241  DFF  /u_entertainment/volume_level_reg[1]
+//  (R) + 141  DFF  /u_entertainment/volume_level_reg[1]/U$1/U$1
+add compared points u_entertainment/volume_level_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 242  DFF  /u_entertainment/volume_level_reg[0]
+//  (R) + 139  DFF  /u_entertainment/volume_level_reg[0]/U$1/U$1
+add compared points u_entertainment/volume_level_reg[0]
+
+// Compared points are: Equivalent
+//  (G) + 243  DFF  /u_entertainment/music_on_reg
+//  (R) + 138  DFF  /u_entertainment/music_on_reg/U$1/U$1
+add compared points u_entertainment/music_on_reg
+
+// Compared points are: Equivalent
+//  (G) + 244  DFF  /u_entertainment/tv_on_reg
+//  (R) + 137  DFF  /u_entertainment/tv_on_reg/U$1/U$1
+add compared points u_entertainment/tv_on_reg
+
+// Compared points are: Equivalent
+//  (G) + 245  DFF  /u_appliances/lights_on_reg
+//  (R) + 110  DFF  /u_appliances/lights_on_reg/U$1/U$1
+add compared points u_appliances/lights_on_reg
+
+// Compared points are: Equivalent
+//  (G) + 246  DFF  /u_appliances/fan_on_reg
+//  (R) + 109  DFF  /u_appliances/fan_on_reg/U$1/U$1
+add compared points u_appliances/fan_on_reg
+
+// Compared points are: Equivalent
+//  (G) + 247  DFF  /u_appliances/ac_on_reg
+//  (R) + 108  DFF  /u_appliances/ac_on_reg/U$1/U$1
+add compared points u_appliances/ac_on_reg
+
+// Compared points are: Equivalent
+//  (G) + 248  DFF  /u_door_lock/attempt_counter_reg[2]
+//  (R) + 134  DFF  /u_door_lock/attempt_counter_reg[2]/U$1/U$1
+add compared points u_door_lock/attempt_counter_reg[2]
+
+// Compared points are: Equivalent
+//  (G) + 249  DFF  /u_door_lock/attempt_counter_reg[1]
+//  (R) + 133  DFF  /u_door_lock/attempt_counter_reg[1]/U$1/U$1
+add compared points u_door_lock/attempt_counter_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 250  DFF  /u_door_lock/attempt_counter_reg[0]
+//  (R) + 135  DFF  /u_door_lock/attempt_counter_reg[0]/U$1/U$1
+add compared points u_door_lock/attempt_counter_reg[0]
+
+// Compared points are: Equivalent
+//  (G) + 251  DFF  /u_door_lock/timeout_counter_reg[7]
+//  (R) + 124  DFF  /u_door_lock/timeout_counter_reg[7]/U$1/U$1
+add compared points u_door_lock/timeout_counter_reg[7]
+
+// Compared points are: Equivalent
+//  (G) + 252  DFF  /u_door_lock/timeout_counter_reg[6]
+//  (R) + 125  DFF  /u_door_lock/timeout_counter_reg[6]/U$1/U$1
+add compared points u_door_lock/timeout_counter_reg[6]
+
+// Compared points are: Equivalent
+//  (G) + 253  DFF  /u_door_lock/timeout_counter_reg[5]
+//  (R) + 126  DFF  /u_door_lock/timeout_counter_reg[5]/U$1/U$1
+add compared points u_door_lock/timeout_counter_reg[5]
+
+// Compared points are: Equivalent
+//  (G) + 254  DFF  /u_door_lock/timeout_counter_reg[4]
+//  (R) + 127  DFF  /u_door_lock/timeout_counter_reg[4]/U$1/U$1
+add compared points u_door_lock/timeout_counter_reg[4]
+
+// Compared points are: Equivalent
+//  (G) + 255  DFF  /u_door_lock/timeout_counter_reg[3]
+//  (R) + 128  DFF  /u_door_lock/timeout_counter_reg[3]/U$1/U$1
+add compared points u_door_lock/timeout_counter_reg[3]
+
+// Compared points are: Equivalent
+//  (G) + 256  DFF  /u_door_lock/timeout_counter_reg[2]
+//  (R) + 130  DFF  /u_door_lock/timeout_counter_reg[2]/U$1/U$1
+add compared points u_door_lock/timeout_counter_reg[2]
+
+// Compared points are: Equivalent
+//  (G) + 257  DFF  /u_door_lock/timeout_counter_reg[1]
+//  (R) + 129  DFF  /u_door_lock/timeout_counter_reg[1]/U$1/U$1
+add compared points u_door_lock/timeout_counter_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 258  DFF  /u_door_lock/timeout_counter_reg[0]
+//  (R) + 131  DFF  /u_door_lock/timeout_counter_reg[0]/U$1/U$1
+add compared points u_door_lock/timeout_counter_reg[0]
+
+// Compared points are: Equivalent
+//  (G) + 259  DFF  /u_door_lock/state_reg[1]
+//  (R) + 132  DFF  /u_door_lock/state_reg[1]/U$1/U$1
+add compared points u_door_lock/state_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 260  DFF  /u_door_lock/state_reg[0]
+//  (R) + 136  DFF  /u_door_lock/state_reg[0]/U$1/U$1
+add compared points u_door_lock/state_reg[0]
+
+// Compared points are: Equivalent
+//  (G) + 261  DFF  /u_door_lock/lock_status_reg[1]
+//  (R) + 122  DFF  /u_door_lock/lock_status_reg[1]/U$1/U$1
+add compared points u_door_lock/lock_status_reg[1]
+
+// Compared points are: Equivalent
+//  (G) + 262  DFF  /u_door_lock/lock_status_reg[0]
+//  (R) + 123  DFF  /u_door_lock/lock_status_reg[0]/U$1/U$1
+add compared points u_door_lock/lock_status_reg[0]
+
+// Compared points are: Equivalent
+//  (G) + 263  DFF  /u_door_lock/door_locked_reg
+//  (R) + 121  DFF  /u_door_lock/door_locked_reg/U$1/U$1
+add compared points u_door_lock/door_locked_reg
+
+// Compared points are: Equivalent
+//  (G) + 264  DFF  /u_humidity/dehumidifier_on_reg
+//  (R) + 143  DFF  /u_humidity/dehumidifier_on_reg/U$1/U$1
+add compared points u_humidity/dehumidifier_on_reg
+
+// Compared points are: Equivalent
+//  (G) + 265  DFF  /u_humidity/humidifier_on_reg
+//  (R) + 144  DFF  /u_humidity/humidifier_on_reg/U$1/U$1
+add compared points u_humidity/humidifier_on_reg
+
+// 203 compared points written

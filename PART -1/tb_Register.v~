@@ -1,0 +1,69 @@
+module Register_file_tb;
+
+    // Inputs
+    reg clk;
+    reg reset;
+    reg write_en;
+    reg [31:0] write_data;
+    reg [4:0] read_addr1;
+    reg [4:0] read_addr2;
+    reg [4:0] write_addr;
+
+    // Outputs
+    wire [31:0] read_data1;
+    wire [31:0] read_data2;
+
+    // Instantiate the Unit Under Test (UUT)
+    Register_file uut (
+        .clk(clk), 
+        .reset(reset), 
+        .write_en(write_en), 
+        .write_data(write_data), 
+        .read_addr1(read_addr1), 
+        .read_addr2(read_addr2), 
+        .write_addr(write_addr), 
+        .read_data1(read_data1), 
+        .read_data2(read_data2)
+    );
+
+    // Clock generation
+    always #5 clk = ~clk;
+
+    initial begin
+        // Initialize Inputs
+        clk = 0;
+        reset = 0;
+        write_en = 0;
+        write_data = 0;
+        read_addr1 = 0;
+        read_addr2 = 0;
+        write_addr = 0;
+
+        // Apply reset
+        #10 reset = 1;
+
+        // Write to register 5
+        #10 write_en = 1;
+            write_addr = 5;
+            write_data = 32'hDEADBEEF;
+
+        // Disable write
+        #10 write_en = 0;
+
+        // Read from register 5 and 0
+        #10 read_addr1 = 5;
+            read_addr2 = 0;
+
+        // Read from two non-zero registers
+        #10 write_en = 1;
+            write_addr = 10;
+            write_data = 32'hCAFEBABE;
+        #10 write_en = 0;
+            read_addr1 = 10;
+            read_addr2 = 5;
+
+        // Finish simulation
+        #20 $finish;
+    end
+
+endmodule

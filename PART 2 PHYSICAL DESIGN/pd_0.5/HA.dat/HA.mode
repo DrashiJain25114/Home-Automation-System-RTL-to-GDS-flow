@@ -1,0 +1,66 @@
+if {![namespace exists ::IMEX]} { namespace eval ::IMEX {} }
+set ::IMEX::dataVar [file dirname [file normalize [info script]]]
+set ::IMEX::libVar ${::IMEX::dataVar}/libs
+
+catch { setDesignMode -flowEffort standard }
+catch { setDesignMode -process 90 }
+catch { setAnalysisMode -analysisType single }
+catch { setAnalysisMode -checkType setup }
+catch { setAnalysisMode -clkSrcPath true }
+catch { setAnalysisMode -clockPropagation sdcControl }
+catch { setAnalysisMode -virtualIPO false }
+catch { setOptMode -activeHoldViews { view1 } }
+catch { setOptMode -activeSetupViews { view1 } }
+catch { setOptMode -autoHoldViews { view1} }
+catch { setOptMode -autoSetupViews { view1} }
+catch { setOptMode -autoTDGRSetupViews { view1} }
+catch { setOptMode -autoViewHoldTargetSlack 0 }
+catch { setOptMode -drcMargin 0 }
+catch { setOptMode -fixDrc true }
+catch { setOptMode -preserveAllSequential false }
+catch { setOptMode -setupTargetSlack 0 }
+catch { setExtractRCMode  -engine preRoute -total_c_th 0 -relative_c_th 1 -coupling_c_th 0.2 }
+catch { set_ccopt_mode -cts_buffer_cells {CLKBUFX3 CLKBUFX2  CLKBUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKINVX3 CLKINVX2 CLKINVX8 CLKINVX12 CLKINVX16} }
+catch { set_ccopt_mode -cts_opt_priority all }
+catch { set_ccopt_mode -is_mode_set_route_top_mask false }
+catch { set_ccopt_mode -is_mode_set_route_top_preferred_extra_space false }
+catch {setNanoRouteMode -quiet -drouteUseMinSpacingForBlockage auto}
+catch {setNanoRouteMode -quiet -extractThirdPartyCompatible false}
+catch {setNanoRouteMode -quiet -grouteExpTdStdDelay 35.800000}
+catch {setNanoRouteMode -quiet -grouteExpTdUseTifTimingEngineForImportDesign false}
+catch {setNanoRouteMode -quiet -routeStrictlyHonorNonDefaultRule "false"}
+catch {setNanoRouteMode -quiet -routeWithSiDriven false}
+catch {setNanoRouteMode -quiet -routeWithSiPostRouteFix false}
+catch {setNanoRouteMode -quiet -routeWithTimingDriven false}
+catch {setNanoRouteMode -quiet -timingEngine ""}
+
+catch { setPlaceMode -place_design_floorplan_mode false }
+catch { setIlmMode -keepHighFanoutPorts true -keepLoopBack false -keepFlatten true }
+catch { set_ccopt_mode -cts_buffer_cells {CLKBUFX3 CLKBUFX2  CLKBUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKINVX3 CLKINVX2 CLKINVX8 CLKINVX12 CLKINVX16} }
+catch { set_ccopt_mode -cts_opt_priority all }
+catch { set_ccopt_mode -is_mode_set_route_top_mask false }
+catch { set_ccopt_mode -is_mode_set_route_top_preferred_extra_space false }
+catch { setUsefulSkewMode -ecoRoute false }
+catch { set_verify_drc_mode -area {0 0 0 0} }
+catch { set_verify_drc_mode -check_ndr_spacing auto }
+catch { set_verify_drc_mode -check_only default }
+catch { set_verify_drc_mode -check_same_via_cell false }
+catch { set_verify_drc_mode -disable_rules "" }
+catch { set_verify_drc_mode -exclude_pg_net false }
+catch { set_verify_drc_mode -ignore_cell_blockage false }
+catch { set_verify_drc_mode -ignore_trial_route false }
+catch { set_verify_drc_mode -limit 1000 }
+catch { set_verify_drc_mode -report ${::IMEX::libVar}/misc/HA.drc.rpt }
+catch { set_verify_drc_mode -use_min_spacing_on_block_obs auto }
+catch { setDelayCalMode -enable_high_fanout true }
+catch { setDelayCalMode -eng_copyNetPropToNewNet true }
+catch { setDelayCalMode -engine aae }
+catch { setDelayCalMode -ignoreNetLoad false }
+catch { setDelayCalMode -reportOutBound true }
+catch { setPinAssignMode -pinEditInBatch false }
+catch { setImportMode -discardFloatingVNets false }
+catch { setImportMode -keepEmptyModule true }
+catch { setSIMode -separate_delta_delay_on_data true }
+catch { setFPlanMode -defaultTechSite gsclib090site }
+catch { setFPlanMode -maxIoHeight false }
+catch { setFPlanMode -powerRailLayer {} }

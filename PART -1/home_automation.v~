@@ -1,0 +1,393 @@
+// ============================================================================
+// Home Automation System - Top Module with Input/Output Flip-Flops
+// ============================================================================
+
+module home_automation_top (
+    input wire clk,
+    input wire rst_n,
+    
+    // Temperature Controller Inputs
+    input wire [7:0] temp_sensor,
+    input wire [7:0] temp_setpoint,
+    
+    // Water Level Controller Inputs
+    input wire [3:0] water_level,
+    input wire [3:0] water_threshold,
+    
+    // Luminosity Controller Inputs
+    input wire [7:0] light_sensor,
+    input wire [7:0] light_threshold,
+    
+    // Burglar Alarm Inputs
+    input wire door_sensor,
+    input wire window_sensor,
+    input wire motion_sensor,
+    input wire alarm_arm,
+    
+    // Visitor Counter Inputs
+    input wire entry_sensor,
+    input wire exit_sensor,
+    
+    // Window Treatments Inputs
+    input wire window_auto_mode,
+    input wire window_manual_cmd,
+    
+    // Entertainment System Inputs
+    input wire entertainment_on,
+    input wire [2:0] entertainment_mode,
+    
+    // Appliances Control Inputs
+    input wire [7:0] appliance_enable,
+    input wire [7:0] appliance_timer,
+    
+    // Gardening System Inputs
+    input wire [7:0] soil_moisture,
+    input wire [7:0] moisture_threshold,
+    
+    // Temperature Controller Outputs
+    output wire heater_on,
+    output wire cooler_on,
+    output wire fan_on,
+    
+    // Water Level Controller Outputs
+    output wire pump_on,
+    output wire valve_open,
+    output wire water_alarm,
+    
+    // Luminosity Controller Outputs
+    output wire lights_on,
+    output wire [3:0] brightness_level,
+    
+    // Burglar Alarm Outputs
+    output wire alarm_trigger,
+    output wire alarm_siren,
+    output wire alarm_notify,
+    
+    // Visitor Counter Outputs
+    output wire [7:0] visitor_count,
+    
+    // Window Treatments Outputs
+    output wire curtain_open,
+    output wire curtain_close,
+    
+    // Entertainment Outputs
+    output wire tv_on,
+    output wire audio_on,
+    output wire [3:0] volume_level,
+    
+    // Appliances Outputs
+    output wire [7:0] appliance_status,
+    
+    // Gardening Outputs
+    output wire sprinkler_on,
+    output wire irrigation_valve
+);
+
+    // ========================================================================
+    // Input Flip-Flops (Synchronization)
+    // ========================================================================
+    
+    // Temperature inputs
+    reg [7:0] temp_sensor_ff;
+    reg [7:0] temp_setpoint_ff;
+    
+    // Water level inputs
+    reg [3:0] water_level_ff;
+    reg [3:0] water_threshold_ff;
+    
+    // Luminosity inputs
+    reg [7:0] light_sensor_ff;
+    reg [7:0] light_threshold_ff;
+    
+    // Burglar alarm inputs
+    reg door_sensor_ff;
+    reg window_sensor_ff;
+    reg motion_sensor_ff;
+    reg alarm_arm_ff;
+    
+    // Visitor counter inputs
+    reg entry_sensor_ff;
+    reg exit_sensor_ff;
+    
+    // Window treatments inputs
+    reg window_auto_mode_ff;
+    reg window_manual_cmd_ff;
+    
+    // Entertainment inputs
+    reg entertainment_on_ff;
+    reg [2:0] entertainment_mode_ff;
+    
+    // Appliances inputs
+    reg [7:0] appliance_enable_ff;
+    reg [7:0] appliance_timer_ff;
+    
+    // Gardening inputs
+    reg [7:0] soil_moisture_ff;
+    reg [7:0] moisture_threshold_ff;
+    
+    // Input registration (synchronous with clock)
+    always @(posedge clk or negedge rst_n) begin
+        if (!rst_n) begin
+            temp_sensor_ff <= 8'd0;
+            temp_setpoint_ff <= 8'd0;
+            water_level_ff <= 4'd0;
+            water_threshold_ff <= 4'd0;
+            light_sensor_ff <= 8'd0;
+            light_threshold_ff <= 8'd0;
+            door_sensor_ff <= 1'b0;
+            window_sensor_ff <= 1'b0;
+            motion_sensor_ff <= 1'b0;
+            alarm_arm_ff <= 1'b0;
+            entry_sensor_ff <= 1'b0;
+            exit_sensor_ff <= 1'b0;
+            window_auto_mode_ff <= 1'b0;
+            window_manual_cmd_ff <= 1'b0;
+            entertainment_on_ff <= 1'b0;
+            entertainment_mode_ff <= 3'd0;
+            appliance_enable_ff <= 8'd0;
+            appliance_timer_ff <= 8'd0;
+            soil_moisture_ff <= 8'd0;
+            moisture_threshold_ff <= 8'd0;
+        end else begin
+            temp_sensor_ff <= temp_sensor;
+            temp_setpoint_ff <= temp_setpoint;
+            water_level_ff <= water_level;
+            water_threshold_ff <= water_threshold;
+            light_sensor_ff <= light_sensor;
+            light_threshold_ff <= light_threshold;
+            door_sensor_ff <= door_sensor;
+            window_sensor_ff <= window_sensor;
+            motion_sensor_ff <= motion_sensor;
+            alarm_arm_ff <= alarm_arm;
+            entry_sensor_ff <= entry_sensor;
+            exit_sensor_ff <= exit_sensor;
+            window_auto_mode_ff <= window_auto_mode;
+            window_manual_cmd_ff <= window_manual_cmd;
+            entertainment_on_ff <= entertainment_on;
+            entertainment_mode_ff <= entertainment_mode;
+            appliance_enable_ff <= appliance_enable;
+            appliance_timer_ff <= appliance_timer;
+            soil_moisture_ff <= soil_moisture;
+            moisture_threshold_ff <= moisture_threshold;
+        end
+    end
+    
+    // ========================================================================
+    // Internal Wires (Combinational Logic Outputs)
+    // ========================================================================
+    
+    wire heater_on_comb;
+    wire cooler_on_comb;
+    wire fan_on_comb;
+    wire pump_on_comb;
+    wire valve_open_comb;
+    wire water_alarm_comb;
+    wire lights_on_comb;
+    wire [3:0] brightness_level_comb;
+    wire alarm_trigger_comb;
+    wire alarm_siren_comb;
+    wire alarm_notify_comb;
+    wire [7:0] visitor_count_comb;
+    wire curtain_open_comb;
+    wire curtain_close_comb;
+    wire tv_on_comb;
+    wire audio_on_comb;
+    wire [3:0] volume_level_comb;
+    wire [7:0] appliance_status_comb;
+    wire sprinkler_on_comb;
+    wire irrigation_valve_comb;
+    
+    // ========================================================================
+    // Output Flip-Flops (Pipeline Register)
+    // ========================================================================
+    
+    reg heater_on_ff;
+    reg cooler_on_ff;
+    reg fan_on_ff;
+    reg pump_on_ff;
+    reg valve_open_ff;
+    reg water_alarm_ff;
+    reg lights_on_ff;
+    reg [3:0] brightness_level_ff;
+    reg alarm_trigger_ff;
+    reg alarm_siren_ff;
+    reg alarm_notify_ff;
+    reg [7:0] visitor_count_ff;
+    reg curtain_open_ff;
+    reg curtain_close_ff;
+    reg tv_on_ff;
+    reg audio_on_ff;
+    reg [3:0] volume_level_ff;
+    reg [7:0] appliance_status_ff;
+    reg sprinkler_on_ff;
+    reg irrigation_valve_ff;
+    
+    // Output registration
+    always @(posedge clk or negedge rst_n) begin
+        if (!rst_n) begin
+            heater_on_ff <= 1'b0;
+            cooler_on_ff <= 1'b0;
+            fan_on_ff <= 1'b0;
+            pump_on_ff <= 1'b0;
+            valve_open_ff <= 1'b0;
+            water_alarm_ff <= 1'b0;
+            lights_on_ff <= 1'b0;
+            brightness_level_ff <= 4'd0;
+            alarm_trigger_ff <= 1'b0;
+            alarm_siren_ff <= 1'b0;
+            alarm_notify_ff <= 1'b0;
+            visitor_count_ff <= 8'd0;
+            curtain_open_ff <= 1'b0;
+            curtain_close_ff <= 1'b0;
+            tv_on_ff <= 1'b0;
+            audio_on_ff <= 1'b0;
+            volume_level_ff <= 4'd0;
+            appliance_status_ff <= 8'd0;
+            sprinkler_on_ff <= 1'b0;
+            irrigation_valve_ff <= 1'b0;
+        end else begin
+            heater_on_ff <= heater_on_comb;
+            cooler_on_ff <= cooler_on_comb;
+            fan_on_ff <= fan_on_comb;
+            pump_on_ff <= pump_on_comb;
+            valve_open_ff <= valve_open_comb;
+            water_alarm_ff <= water_alarm_comb;
+            lights_on_ff <= lights_on_comb;
+            brightness_level_ff <= brightness_level_comb;
+            alarm_trigger_ff <= alarm_trigger_comb;
+            alarm_siren_ff <= alarm_siren_comb;
+            alarm_notify_ff <= alarm_notify_comb;
+            visitor_count_ff <= visitor_count_comb;
+            curtain_open_ff <= curtain_open_comb;
+            curtain_close_ff <= curtain_close_comb;
+            tv_on_ff <= tv_on_comb;
+            audio_on_ff <= audio_on_comb;
+            volume_level_ff <= volume_level_comb;
+            appliance_status_ff <= appliance_status_comb;
+            sprinkler_on_ff <= sprinkler_on_comb;
+            irrigation_valve_ff <= irrigation_valve_comb;
+        end
+    end
+    
+    // Assign registered outputs
+    assign heater_on = heater_on_ff;
+    assign cooler_on = cooler_on_ff;
+    assign fan_on = fan_on_ff;
+    assign pump_on = pump_on_ff;
+    assign valve_open = valve_open_ff;
+    assign water_alarm = water_alarm_ff;
+    assign lights_on = lights_on_ff;
+    assign brightness_level = brightness_level_ff;
+    assign alarm_trigger = alarm_trigger_ff;
+    assign alarm_siren = alarm_siren_ff;
+    assign alarm_notify = alarm_notify_ff;
+    assign visitor_count = visitor_count_ff;
+    assign curtain_open = curtain_open_ff;
+    assign curtain_close = curtain_close_ff;
+    assign tv_on = tv_on_ff;
+    assign audio_on = audio_on_ff;
+    assign volume_level = volume_level_ff;
+    assign appliance_status = appliance_status_ff;
+    assign sprinkler_on = sprinkler_on_ff;
+    assign irrigation_valve = irrigation_valve_ff;
+    
+    // ========================================================================
+    // Sub-Module Instantiations
+    // ========================================================================
+    
+    // 1. Temperature Controller
+    temperature_controller temp_ctrl (
+        .clk(clk),
+        .rst_n(rst_n),
+        .temp_sensor(temp_sensor_ff),
+        .temp_setpoint(temp_setpoint_ff),
+        .heater_on(heater_on_comb),
+        .cooler_on(cooler_on_comb),
+        .fan_on(fan_on_comb)
+    );
+    
+    // 2. Water Level Controller
+    water_level_controller water_ctrl (
+        .clk(clk),
+        .rst_n(rst_n),
+        .water_level(water_level_ff),
+        .water_threshold(water_threshold_ff),
+        .pump_on(pump_on_comb),
+        .valve_open(valve_open_comb),
+        .water_alarm(water_alarm_comb)
+    );
+    
+    // 3. Luminosity Controller
+    luminosity_controller lum_ctrl (
+        .clk(clk),
+        .rst_n(rst_n),
+        .light_sensor(light_sensor_ff),
+        .light_threshold(light_threshold_ff),
+        .lights_on(lights_on_comb),
+        .brightness_level(brightness_level_comb)
+    );
+    
+    // 4. Burglar Alarm
+    burglar_alarm alarm (
+        .clk(clk),
+        .rst_n(rst_n),
+        .door_sensor(door_sensor_ff),
+        .window_sensor(window_sensor_ff),
+        .motion_sensor(motion_sensor_ff),
+        .alarm_arm(alarm_arm_ff),
+        .alarm_trigger(alarm_trigger_comb),
+        .alarm_siren(alarm_siren_comb),
+        .alarm_notify(alarm_notify_comb)
+    );
+    
+    // 5. Visitor Counter
+    visitor_counter vis_counter (
+        .clk(clk),
+        .rst_n(rst_n),
+        .entry_sensor(entry_sensor_ff),
+        .exit_sensor(exit_sensor_ff),
+        .visitor_count(visitor_count_comb)
+    );
+    
+    // 6. Window Treatments
+    window_treatments window_ctrl (
+        .clk(clk),
+        .rst_n(rst_n),
+        .auto_mode(window_auto_mode_ff),
+        .manual_cmd(window_manual_cmd_ff),
+        .light_sensor(light_sensor_ff),
+        .curtain_open(curtain_open_comb),
+        .curtain_close(curtain_close_comb)
+    );
+    
+    // 7. Entertainment System
+    entertainment_system entertainment (
+        .clk(clk),
+        .rst_n(rst_n),
+        .entertainment_on(entertainment_on_ff),
+        .mode(entertainment_mode_ff),
+        .tv_on(tv_on_comb),
+        .audio_on(audio_on_comb),
+        .volume_level(volume_level_comb)
+    );
+    
+    // 8. Appliances Control
+    appliances_control appliances (
+        .clk(clk),
+        .rst_n(rst_n),
+        .appliance_enable(appliance_enable_ff),
+        .appliance_timer(appliance_timer_ff),
+        .appliance_status(appliance_status_comb)
+    );
+    
+    // 9. Gardening System
+    gardening_system garden (
+        .clk(clk),
+        .rst_n(rst_n),
+        .soil_moisture(soil_moisture_ff),
+        .moisture_threshold(moisture_threshold_ff),
+        .sprinkler_on(sprinkler_on_comb),
+        .irrigation_valve(irrigation_valve_comb)
+    );
+
+endmodule

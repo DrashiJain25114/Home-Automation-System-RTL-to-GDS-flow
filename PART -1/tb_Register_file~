@@ -1,0 +1,399 @@
+
+
+module tb_Register_file;
+    // Testbench signals
+    reg clk;
+    reg reset;
+    reg write_en;
+    reg [31:0] write_data;
+    reg [4:0] read_addr1, read_addr2, write_addr;
+    wire [31:0] read_data1, read_data2;
+    
+    // Instantiate the Register File
+    Register_file dut (
+        .clk(clk),
+        .reset(reset),
+        .write_en(write_en),
+        .write_data(write_data),
+        .read_addr1(read_addr1),
+        .read_addr2(read_addr2),
+        .write_addr(write_addr),
+        .read_data1(read_data1),
+        .read_data2(read_data2)
+    );
+    
+    // Clock generation
+    always #5 clk = ~clk;
+    
+    // Test variables
+    integer i;
+    integer error_count;
+    integer test_case;
+    
+    // Main test sequence
+    initial begin
+        $display("=== Starting Register File Test Bench ===");
+        $display("Time\tTest Case\tWrite_En\tWrite_Addr\tWrite_Data\tRead_Addr1\tRead_Data1\tRead_Addr2\tRead_Data2");
+        $display("-------------------------------------------------------------------------------------------------------------------");
+        
+        // Initialize
+        clk = 0;
+        reset = 1;
+        write_en = 0;
+        write_data = 32'h0;
+        read_addr1 = 5'b0;
+        read_addr2 = 5'b0;
+        write_addr = 5'b0;
+        error_count = 0;
+        test_case = 0;
+        
+        // Apply reset
+        #10 reset = 0;
+        #20 reset = 1;
+        
+        $display("Reset completed at time %0t", $time);
+        
+        // Test Case 1: Verify reset functionality
+        test_case = 1;
+        $display("\n=== Test Case %0d: Reset Verification ===", test_case);
+        verify_reset();
+        
+        // Test Case 2: Basic write and read operations
+        test_case = 2;
+        $display("\n=== Test Case %0d: Basic Write/Read Operations ===", test_case);
+        test_basic_operations();
+        
+        // Test Case 3: Register x0 always returns zero
+        test_case = 3;
+        $display("\n=== Test Case %0d: Register x0 (Always Zero) ===", test_case);
+        test_register_zero();
+        
+        // Test Case 4: Multiple writes and reads
+        test_case = 4;
+        $display("\n=== Test Case %0d: Multiple Register Operations ===", test_case);
+        test_multiple_operations();
+        
+        // Test Case 5: Write enable functionality
+        test_case = 5;
+        $display("\n=== Test Case %0d: Write Enable Control ===", test_case);
+        test_write_enable();
+        
+        // Test Case 6: Concurrent read during write
+        test_case = 6;
+        $display("\n=== Test Case %0d: Concurrent Read During Write ===", test_case);
+        test_concurrent_operations();
+        
+        // Test Case 7: Edge cases and boundary conditions
+        test_case = 7;
+        $display("\n=== Test Case %0d: Edge Cases ===", test_case);
+        test_edge_cases();
+        
+        // Summary
+        $display("\n=== Test Summary ===");
+        $display("Total test cases: %0d", test_case);
+        $display("Errors detected: %0d", error_count);
+        
+        if (error_count == 0) begin
+            $display("*** ALL TESTS PASSED ***");
+        end else begin
+            $display("*** %0d TESTS FAILED ***", error_count);
+        end
+        
+        #50 $finish;
+    end
+    
+    // Task to display current state
+    task display_state;
+        input [255:0] test_name;
+        begin
+            $display("%0t\t%s\t%b\t\t%0d\t\t%h\t%0d\t\t%h\t\t%0d\t\t%h", 
+                    $time, test_name, write_en, write_addr, write_data, 
+                    read_addr1, read_data1, read_addr2, read_data2);
+        end
+    endtask
+    
+    // Test Case 1: Verify reset functionality
+    task verify_reset;
+        begin
+            // Check that all registers are zero after reset
+            for (i = 0; i < 32; i = i + 1) begin
+                read_addr1 = i;
+                #1; // Wait for combinational logic
+                if (read_data1 !== 32'h0) begin
+                    $error("Register x%0d not reset to zero. Value: %h", i, read_data1);
+                    error_count = error_count + 1;
+                end
+            end
+            $display("Reset verification completed - All registers initialized to zero");
+        end
+    endtask
+    
+    // Test Case 2: Basic write and read operations
+    task test_basic_operations;
+        begin
+            // Write to register x1
+            @(negedge clk);
+            write_en = 1;
+            write_addr = 5'd1;
+            write_data = 32'h12345678;
+            @(posedge clk);
+            #1;
+            write_en = 0;
+            
+            // Read from register x1
+            read_addr1 = 5'd1;
+            #2;
+            display_state("Write x1");
+            if (read_data1 !== 32'h12345678) begin
+                $error("Readback failed for x1. Expected: %h, Got: %h", 32'h12345678, read_data1);
+                error_count = error_count + 1;
+            end
+            
+            // Write to register x10
+            @(negedge clk);
+            write_en = 1;
+            write_addr = 5'd10;
+            write_data = 32'hABCDEF01;
+            @(posedge clk);
+            #1;
+            write_en = 0;
+            
+            // Read from register x10
+            read_addr1 = 5'd10;
+            #2;
+            display_state("Write x10");
+            if (read_data1 !== 32'hABCDEF01) begin
+                $error("Readback failed for x10. Expected: %h, Got: %h", 32'hABCDEF01, read_data1);
+                error_count = error_count + 1;
+            end
+            
+            $display("Basic operations test completed");
+        end
+    endtask
+    
+    // Test Case 3: Register x0 always returns zero
+    task test_register_zero;
+        begin
+            // Try to write to x0
+            @(negedge clk);
+            write_en = 1;
+            write_addr = 5'd0;
+            write_data = 32'hDEADBEEF;
+            @(posedge clk);
+            #1;
+            write_en = 0;
+            
+            // Read from x0 - should always be zero
+            read_addr1 = 5'd0;
+            #2;
+            display_state("Write x0 attempt");
+            if (read_data1 !== 32'h0) begin
+                $error("Register x0 not zero. Value: %h", read_data1);
+                error_count = error_count + 1;
+            end
+            
+            // Also check with read_addr2
+            read_addr2 = 5'd0;
+            #2;
+            if (read_data2 !== 32'h0) begin
+                $error("Register x0 (port 2) not zero. Value: %h", read_data2);
+                error_count = error_count + 1;
+            end
+            
+            $display("Register x0 test completed - Always returns zero");
+        end
+    endtask
+    
+    // Test Case 4: Multiple writes and reads
+    task test_multiple_operations;
+        begin
+            // Write to multiple registers
+            for (i = 1; i < 16; i = i + 1) begin
+                @(negedge clk);
+                write_en = 1;
+                write_addr = i;
+                write_data = 32'h1000 + i;
+                @(posedge clk);
+                #1;
+            end
+            write_en = 0;
+            
+            // Verify all writes
+            for (i = 1; i < 16; i = i + 1) begin
+                read_addr1 = i;
+                #2;
+                if (read_data1 !== (32'h1000 + i)) begin
+                    $error("Register x%0d verification failed. Expected: %h, Got: %h", 
+                           i, (32'h1000 + i), read_data1);
+                    error_count = error_count + 1;
+                end
+            end
+            
+            $display("Multiple operations test completed - Verified 15 registers");
+        end
+    endtask
+    
+    // Test Case 5: Write enable functionality
+    task test_write_enable;
+        begin
+            // Set up write but with write_en = 0
+            @(negedge clk);
+            write_en = 0;
+            write_addr = 5'd5;
+            write_data = 32'h55555555;
+            @(posedge clk);
+            #1;
+            
+            // Check that write didn't happen
+            read_addr1 = 5'd5;
+            #2;
+            display_state("Write disabled");
+            if (read_data1 === 32'h55555555) begin
+                $error("Write occurred with write_en = 0");
+                error_count = error_count + 1;
+            end
+            
+            // Now enable write
+            @(negedge clk);
+            write_en = 1;
+            write_addr = 5'd5;
+            write_data = 32'h55555555;
+            @(posedge clk);
+            #1;
+            write_en = 0;
+            
+            // Verify write happened
+            read_addr1 = 5'd5;
+            #2;
+            display_state("Write enabled");
+            if (read_data1 !== 32'h55555555) begin
+                $error("Write did not occur with write_en = 1");
+                error_count = error_count + 1;
+            end
+            
+            $display("Write enable control test completed");
+        end
+    endtask
+    
+    // Test Case 6: Concurrent read during write
+    task test_concurrent_operations;
+        begin
+            // Setup initial value
+            @(negedge clk);
+            write_en = 1;
+            write_addr = 5'd7;
+            write_data = 32'h77777777;
+            @(posedge clk);
+            #1;
+            write_en = 0;
+            
+            // Read from two different registers simultaneously
+            read_addr1 = 5'd1;  // Should read previously written value
+            read_addr2 = 5'd10; // Should read previously written value
+            #2;
+            display_state("Concurrent read");
+            
+            // Verify both reads are correct
+            if (read_data1 !== 32'h12345678) begin
+                $error("Concurrent read 1 failed. Expected: %h, Got: %h", 32'h12345678, read_data1);
+                error_count = error_count + 1;
+            end
+            
+            if (read_data2 !== 32'hABCDEF01) begin
+                $error("Concurrent read 2 failed. Expected: %h, Got: %h", 32'hABCDEF01, read_data2);
+                error_count = error_count + 1;
+            end
+            
+            // Test reading same register from both ports
+            read_addr1 = 5'd7;
+            read_addr2 = 5'd7;
+            #2;
+            display_state("Same reg both ports");
+            if (read_data1 !== 32'h77777777 || read_data2 !== 32'h77777777) begin
+                $error("Same register read from both ports failed");
+                error_count = error_count + 1;
+            end
+            
+            $display("Concurrent operations test completed");
+        end
+    endtask
+    
+    // Test Case 7: Edge cases and boundary conditions
+    task test_edge_cases;
+        begin
+            // Test writing to maximum address (x31)
+            @(negedge clk);
+            write_en = 1;
+            write_addr = 5'd31;
+            write_data = 32'hFFFFFFFF;
+            @(posedge clk);
+            #1;
+            write_en = 0;
+            
+            read_addr1 = 5'd31;
+            #2;
+            display_state("Write x31");
+            if (read_data1 !== 32'hFFFFFFFF) begin
+                $error("Write to x31 failed. Expected: %h, Got: %h", 32'hFFFFFFFF, read_data1);
+                error_count = error_count + 1;
+            end
+            
+            // Test writing all ones pattern
+            @(negedge clk);
+            write_en = 1;
+            write_addr = 5'd8;
+            write_data = 32'hFFFFFFFF;
+            @(posedge clk);
+            #1;
+            write_en = 0;
+            
+            read_addr1 = 5'd8;
+            #2;
+            if (read_data1 !== 32'hFFFFFFFF) begin
+                $error("All ones pattern write failed");
+                error_count = error_count + 1;
+            end
+            
+            // Test writing alternating pattern
+            @(negedge clk);
+            write_en = 1;
+            write_addr = 5'd9;
+            write_data = 32'hAAAAAAAA;
+            @(posedge clk);
+            #1;
+            write_en = 0;
+            
+            read_addr1 = 5'd9;
+            #2;
+            if (read_data1 !== 32'hAAAAAAAA) begin
+                $error("Alternating pattern write failed");
+                error_count = error_count + 1;
+            end
+            
+            $display("Edge cases test completed");
+        end
+    endtask
+    
+    // Monitor for debugging
+    initial begin
+        $monitor("Time: %0t | Write: en=%b, addr=%0d, data=%h | Read1: addr=%0d, data=%h | Read2: addr=%0d, data=%h",
+                $time, write_en, write_addr, write_data, read_addr1, read_data1, read_addr2, read_data2);
+    end
+    
+    // Waveform dumping
+    initial begin
+        $dumpfile("register_file_waves.shm");
+        $dumpvars(0, tb_Register_file);
+    end
+    
+    // Automatic check for unknown values
+    always @(read_data1 or read_data2) begin
+        if (read_data1 === 32'hxxxxxxxx) begin
+            $warning("Unknown value on read_data1 at time %0t", $time);
+        end
+        if (read_data2 === 32'hxxxxxxxx) begin
+            $warning("Unknown value on read_data2 at time %0t", $time);
+        end
+    end
+    
+endmodule

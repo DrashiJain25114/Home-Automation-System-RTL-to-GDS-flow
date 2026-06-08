@@ -1,0 +1,5 @@
+csh
+source /cadence/cshrc 
+innovus 
+source encounter_script.tcl  //tcl file name 
+

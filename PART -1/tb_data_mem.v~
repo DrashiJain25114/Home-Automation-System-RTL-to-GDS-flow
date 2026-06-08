@@ -1,0 +1,75 @@
+
+
+module data_memory_unit_tb;
+
+  // Inputs
+  reg clk;
+  reg write_enable;
+  reg [31:0] address;
+  reg [31:0] write_data;
+
+  // Output
+  wire [31:0] read_data;
+
+  // Instantiate the module under test
+  data_memory_unit dut (
+    .clk(clk),
+    .write_enable(write_enable),
+    .address(address),
+    .write_data(write_data),
+    .read_data(read_data)
+  );
+
+  // Clock generation: 10ns period
+  initial clk = 0;
+  always #5 clk = ~clk;
+
+  // Task to display memory state
+  task show_state;
+    begin
+      $display("Time: %0t ns | Addr: %0d | WriteEn: %b | WriteData: %0d | ReadData: %0d",
+               $time, address, write_enable, write_data, read_data);
+    end
+  endtask
+
+  initial begin
+    $dumpfile("data_memory_unit_tb.vcd");
+    $dumpvars(0, data_memory_unit_tb);
+
+    $display("Starting data_memory_unit testbench...\n");
+
+    // Initialize
+    write_enable = 0;
+    address = 32'd0;
+    write_data = 32'd0;
+
+    // Write to address 0
+    #10;
+    address = 32'd0;
+    write_data = 32'd123;
+    write_enable = 1;
+    #10 show_state;
+
+    // Write to address 4
+    address = 32'd4;
+    write_data = 32'd456;
+    #10 show_state;
+
+    // Disable write, read address 0
+    write_enable = 0;
+    address = 32'd0;
+    #10 show_state;
+
+    // Read address 4
+    address = 32'd4;
+    #10 show_state;
+
+    // Read address 8 (unwritten)
+    address = 32'd8;
+    #10 show_state;
+
+    $display("Testbench completed.");
+    $finish;
+  end
+
+endmodule
